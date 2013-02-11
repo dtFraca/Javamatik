@@ -15,3 +15,6 @@ bin/
 .idea/tasks.xml
 .idea/workspace.xml
 out/
+
+#--LibreOffice temp
+.~*
