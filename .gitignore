@@ -1,0 +1,20 @@
+# DOC: https://help.github.com/articles/ignoring-files
+
+# Standard Ignore for Java files
+*.class
+*.jar
+*.war
+*.ear
+
+# Additional ignore
+bin/
+.metadata
+
+#--Ignore IntelliJ IDEA v12 files (http://devnet.jetbrains.com/docs/DOC-1186)
+.iws
+.idea/tasks.xml
+.idea/workspace.xml
+out/
+
+#--LibreOffice temp
+.~*
