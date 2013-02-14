@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/01_Print/01_Print.iml" filepath="$PROJECT_DIR$/01_Print/01_Print.iml" />
       <module fileurl="file://$PROJECT_DIR$/03_Scanner/03_Scanner.iml" filepath="$PROJECT_DIR$/03_Scanner/03_Scanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04_Boucle_FOR_WHILE/04_Boucle_FOR_WHILE.iml" filepath="$PROJECT_DIR$/04_Boucle_FOR_WHILE/04_Boucle_FOR_WHILE.iml" />
     </modules>
   </component>
 </project>
