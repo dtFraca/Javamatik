@@ -2,7 +2,7 @@ package edu.dtfraca.exo;
 
 import java.util.Scanner;
 
-public class Comparer2Nombres {
+public class A1_Comparer2Nombres {
 
 	/**
 	 * Les tests conditionels
