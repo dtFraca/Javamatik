@@ -24,7 +24,7 @@ public class CompterMotsV1 {
 		while (myScan.hasNext()) {
 			kk++; // equivalent de kk = kk+1
 			
-			// extraire le mot suivant: un mot est un string qui se trouve entre 2 espaces
+			// extr477677319683aire le mot suivant: un mot est un string qui se trouve entre 2 espaces
 			// NOTE: les ponctuations sont ignorees
 			//String unMot = myScan.next();
             myScan.next();
