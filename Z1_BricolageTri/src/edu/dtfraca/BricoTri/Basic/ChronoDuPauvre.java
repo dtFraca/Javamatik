@@ -14,11 +14,11 @@ public class ChronoDuPauvre {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Le Chronomètre du Pauvre");
-		System.out.println("Presser [Enter] pour afficher temps écoulé");
+		System.out.println("Le Chronomï¿½tre du Pauvre");
+		System.out.println("Presser [Enter] pour afficher temps Ã©coulÃ©");
 		System.out.println("------------------------------------------");
 
-		// temps départ avant démarrage de l'action
+		// temps dÃ©part avant dï¿½marrage de l'action
 		long lStartTime = new Date().getTime(); //start time
 
 		Scanner myScanner = new Scanner(System.in);
@@ -34,8 +34,8 @@ public class ChronoDuPauvre {
 		SimpleDateFormat dateFmtElapsedTime = new SimpleDateFormat("HH:mm:ss.SSS");
 		dateFmtElapsedTime.setTimeZone(TimeZone.getTimeZone("UTC")); //eliminate TimeZone, otherwise TZ will be added to difference	
 
-		System.out.println("Temps Départ: " + dateFmtTimeValue.format(new Date(lStartTime)));
+		System.out.println("Temps DÃ©part: " + dateFmtTimeValue.format(new Date(lStartTime)));
 		System.out.println("Temps Final.: " + dateFmtTimeValue.format(new Date(lEndTime)));
-		System.out.println("Temps Ecoulé: " + dateFmtElapsedTime.format(new Date(lEndTime - lStartTime)));
+		System.out.println("Temps EcoulÃ©: " + dateFmtElapsedTime.format(new Date(lEndTime - lStartTime)));
 	}
 }
