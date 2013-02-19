@@ -77,11 +77,11 @@ public class A1_DataType {
         // Date: Customizing Formats
         // http://docs.oracle.com/javase/tutorial/i18n/format/simpleDateFormat.html
         Date exempleDate = new Date();
-        SimpleDateFormat myDateFormat1 = new SimpleDateFormat("yyyy-MM-dd - HH:mm:ss");;
-        SimpleDateFormat myDateFormat2 = new SimpleDateFormat("E d MMM yyyy");;
-        SimpleDateFormat myDateFormat3 = new SimpleDateFormat("EEEE d MMMM yyyy");;
-        SimpleDateFormat myDateFormat4 = new SimpleDateFormat("yyyy-MM-dd");;
-        SimpleDateFormat myDateFormat5 = new SimpleDateFormat("HH:mm:ss.SSS");;
+        SimpleDateFormat myDateFormat1 = new SimpleDateFormat("yyyy-MM-dd - HH:mm:ss");
+        SimpleDateFormat myDateFormat2 = new SimpleDateFormat("E d MMM yyyy");
+        SimpleDateFormat myDateFormat3 = new SimpleDateFormat("EEEE d MMMM yyyy");
+        SimpleDateFormat myDateFormat4 = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat myDateFormat5 = new SimpleDateFormat("HH:mm:ss.SSS");
 
         System.out.println();
         System.out.printf("Date (%s)\t= %s\n", myDateFormat1.toPattern(), myDateFormat1.format(exempleDate));

@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/01_Print/01_Print.iml" filepath="$PROJECT_DIR$/01_Print/01_Print.iml" />
-      <module fileurl="file://$PROJECT_DIR$/02_PrimitiveDataTypeAndOperator/02_PrimitiveDataTypeAndOperator.iml" filepath="$PROJECT_DIR$/02_PrimitiveDataTypeAndOperator/02_PrimitiveDataTypeAndOperator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02_DataTypeAndOperator/02_DataTypeAndOperator.iml" filepath="$PROJECT_DIR$/02_DataTypeAndOperator/02_DataTypeAndOperator.iml" />
       <module fileurl="file://$PROJECT_DIR$/03_Scanner/03_Scanner.iml" filepath="$PROJECT_DIR$/03_Scanner/03_Scanner.iml" />
       <module fileurl="file://$PROJECT_DIR$/04_Boucle_FOR_WHILE/04_Boucle_FOR_WHILE.iml" filepath="$PROJECT_DIR$/04_Boucle_FOR_WHILE/04_Boucle_FOR_WHILE.iml" />
       <module fileurl="file://$PROJECT_DIR$/05_If_ElseIf_Switch/05_If_ElseIf_Switch.iml" filepath="$PROJECT_DIR$/05_If_ElseIf_Switch/05_If_ElseIf_Switch.iml" />

@@ -22,7 +22,7 @@ public class A2_Operator {
         System.out.printf("n1   = %d\n", n1);
 
 
-        int n3 = 10, n4 = 2, result;
+        int n3 = 10, n4 = 2;
         System.out.println();
         System.out.printf("(n3 = %d)\tn3 += %d = %d\t(n3 = n3 + %d)\n", n3, n4, n3 += n4, n4);
 
