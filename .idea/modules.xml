@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/01_Print/01_Print.iml" filepath="$PROJECT_DIR$/01_Print/01_Print.iml" />
-      <module fileurl="file://$PROJECT_DIR$/02_DataTypeAndOperator/02_DataTypeAndOperator.iml" filepath="$PROJECT_DIR$/02_DataTypeAndOperator/02_DataTypeAndOperator.iml" />
-      <module fileurl="file://$PROJECT_DIR$/03_Scanner/03_Scanner.iml" filepath="$PROJECT_DIR$/03_Scanner/03_Scanner.iml" />
-      <module fileurl="file://$PROJECT_DIR$/04_Boucle_FOR_WHILE/04_Boucle_FOR_WHILE.iml" filepath="$PROJECT_DIR$/04_Boucle_FOR_WHILE/04_Boucle_FOR_WHILE.iml" />
-      <module fileurl="file://$PROJECT_DIR$/05_If_ElseIf_Switch/05_If_ElseIf_Switch.iml" filepath="$PROJECT_DIR$/05_If_ElseIf_Switch/05_If_ElseIf_Switch.iml" />
-      <module fileurl="file://$PROJECT_DIR$/06_Random/06_Random.iml" filepath="$PROJECT_DIR$/06_Random/06_Random.iml" />
-      <module fileurl="file://$PROJECT_DIR$/07_Array/07_Array.iml" filepath="$PROJECT_DIR$/07_Array/07_Array.iml" />
-      <module fileurl="file://$PROJECT_DIR$/09_Exception/09_Exception.iml" filepath="$PROJECT_DIR$/09_Exception/09_Exception.iml" />
-      <module fileurl="file://$PROJECT_DIR$/11_DemoClass/11_DemoClass.iml" filepath="$PROJECT_DIR$/11_DemoClass/11_DemoClass.iml" />
-      <module fileurl="file://$PROJECT_DIR$/99_Utils/99_Utils.iml" filepath="$PROJECT_DIR$/99_Utils/99_Utils.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Z1_BricolageTri/Z1_BricolageTri.iml" filepath="$PROJECT_DIR$/Z1_BricolageTri/Z1_BricolageTri.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01_ExoJava/01_ExoJava.iml" filepath="$PROJECT_DIR$/01_ExoJava/01_ExoJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02_Hasard_ForceBrute/02_Hasard_ForceBrute.iml" filepath="$PROJECT_DIR$/02_Hasard_ForceBrute/02_Hasard_ForceBrute.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03_ClasseElementaire/03_ClasseElementaire.iml" filepath="$PROJECT_DIR$/03_ClasseElementaire/03_ClasseElementaire.iml" />
+      <module fileurl="file://$PROJECT_DIR$/91_DTfraca_Utils/91_DTfraca_Utils.iml" filepath="$PROJECT_DIR$/91_DTfraca_Utils/91_DTfraca_Utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/92_BricolageTri/92_BricolageTri.iml" filepath="$PROJECT_DIR$/92_BricolageTri/92_BricolageTri.iml" />
     </modules>
   </component>
 </project>
