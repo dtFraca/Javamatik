@@ -1,3 +1,5 @@
+package Exo03_Scanner;
+
 import java.util.Scanner;
 
 /**
