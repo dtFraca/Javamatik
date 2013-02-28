@@ -19,7 +19,13 @@ public class FrameWithLabelsTest {
     }
 }
 
-
+/*
+Java Access Modifiers:
+- private..: Visible to the class only
+- protected: Visible to the package and all subclasses
+- (none)...: Visible to the package (default)
+- public...: Visible to the world
+*/
 class FrameWithLabels extends JFrame {
     private JLabel label1; // JLabel with just text
     private JLabel label2; // JLabel constructed with text and icon
@@ -36,7 +42,7 @@ class FrameWithLabels extends JFrame {
         add( label1 ); // add label1 to JFrame
 
         // JLabel constructor with string, Icon and alignment arguments
-        Icon myIcon = new ImageIcon( getClass().getResource( "RainbowSphere.png" ) );
+        Icon myIcon = new ImageIcon( getClass().getResource( "imgBoutonRainbow.png" ) );
         label2 = new JLabel( "Label with text and icon on left", myIcon, SwingConstants.LEFT );
         label2.setToolTipText( "This is label2" );
         add( label2 ); // add label2 to JFrame
