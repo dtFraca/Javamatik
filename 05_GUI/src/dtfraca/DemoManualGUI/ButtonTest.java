@@ -1,4 +1,4 @@
-package dtfraca.BricoTri.GUIDemo;
+package dtfraca.DemoManualGUI;
 
 import java.awt.FlowLayout;
 import java.awt.event.ActionListener;
@@ -17,7 +17,7 @@ public class ButtonTest {
 
         FrameWithButton buttonFrame = new FrameWithButton(); // create ButtonFrame
         buttonFrame.setDefaultCloseOperation( WindowConstants.EXIT_ON_CLOSE );
-        buttonFrame.setSize( 300, 170 ); // set frame size
+        buttonFrame.setSize( 300, 170 ); // set frame size (x,y)
         buttonFrame.setVisible( true ); // display frame
     }
 }
@@ -37,8 +37,9 @@ class FrameWithButton extends JFrame
         plainJButton = new JButton( "Bouton Simple" ); // button with text
         this.add( plainJButton ); // add plainJButton to JFrame
 
-        Icon iconBtn1 = new ImageIcon( getClass().getResource( "imgBoutonBleu.png" ) );
-        Icon iconBtn2 = new ImageIcon( getClass().getResource( "imgBoutonRainbow.png" ) );
+        //Icon iconBtn1 = new ImageIcon( getClass().getResource( "imgBoutonBleu.png" ) );
+        Icon iconBtn1 = new ImageIcon( getClass().getResource( "/resource/imgBoutonBleu.png" ) );
+        Icon iconBtn2 = new ImageIcon( getClass().getResource( "/resource/imgBoutonRainbow.png" ) );
         fancyJButton = new JButton( "Bouton Deluxe", iconBtn1 ); // set image
         fancyJButton.setRolloverIcon( iconBtn2 ); // set rollover image
         this.add( fancyJButton ); // add fancyJButton to JFrame
@@ -57,7 +58,7 @@ class FrameWithButton extends JFrame
         {
             JOptionPane.showMessageDialog (
                 FrameWithButton.this,
-                String.format("Vous avez pressé: %s", event.getActionCommand() )
+                String.format("Vous avez cliqué: %s", event.getActionCommand() )
             );
         }
     }

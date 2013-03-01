@@ -1,4 +1,4 @@
-package dtfraca.BricoTri.GUIDemo;
+package dtfraca.DemoManualGUI;
 
 import javax.swing.*;
 

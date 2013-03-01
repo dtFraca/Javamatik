@@ -1,4 +1,4 @@
-package dtfraca.BricoTri.GUIDemo;
+package dtfraca.DemoManualGUI;
 
 import java.awt.FlowLayout;
 import java.awt.event.ActionListener;
@@ -16,7 +16,7 @@ public class TextFieldTest {
     public static void main(String[] args) {
         FrameWithTextField frm1 = new FrameWithTextField();
         frm1.setDefaultCloseOperation( WindowConstants.EXIT_ON_CLOSE );
-        frm1.setSize( 350, 100 ); // set frame size
+        frm1.setSize( 350, 100 ); // set frame size (x,y)
         frm1.setVisible( true ); // display frame
     }
 }

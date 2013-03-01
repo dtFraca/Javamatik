@@ -1,4 +1,4 @@
-package dtfraca.BricoTri.GUIDemo;
+package dtfraca.DemoManualGUI;
 
 import java.awt.FlowLayout;
 import java.awt.Font;
@@ -16,7 +16,7 @@ public class CheckboxTest {
     public static void main(String[] args) {
         FrameWithChkBox frm1 = new FrameWithChkBox();
         frm1.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frm1.setSize(320, 100); // set frame size
+        frm1.setSize(320, 100); // set frame size (x,y)
         frm1.setVisible(true); // display frame
     }
 }
@@ -58,19 +58,19 @@ class FrameWithChkBox extends JFrame
         // respond to checkbox events
         public void itemStateChanged( ItemEvent event )
         {
-            Font font; // stores the new Font
+            Font fontDemo; // stores the new Font
 
             // determine which CheckBoxes are checked and create Font
             if ( boldJCheckBox.isSelected() && italicJCheckBox.isSelected() )
-                font = new Font( "Ubuntu", Font.BOLD + Font.ITALIC, 14 );
+                fontDemo = new Font( "Ubuntu", Font.BOLD + Font.ITALIC, 14 );
             else if ( boldJCheckBox.isSelected() )
-                font = new Font( "Ubuntu", Font.BOLD, 14 );
+                fontDemo = new Font( "Ubuntu", Font.BOLD, 14 );
             else if ( italicJCheckBox.isSelected() )
-                font = new Font( "Ubuntu", Font.ITALIC, 14 );
+                fontDemo = new Font( "Ubuntu", Font.ITALIC, 14 );
             else
-                font = new Font( "Ubuntu", Font.PLAIN, 14 );
+                fontDemo = new Font( "Ubuntu", Font.PLAIN, 14 );
 
-            textField.setFont( font ); // set textField's font
+            textField.setFont( fontDemo ); // set textField's font
         } // end method itemStateChanged
     }
 } // end class FrameWithChkBox

@@ -1,4 +1,4 @@
-package dtfraca.BricoTri.GUIDemo;
+package dtfraca.DemoManualGUI;
 
 import java.awt.FlowLayout; // specifies how components are arranged
 import javax.swing.*;
@@ -14,7 +14,7 @@ public class FrameWithLabelsTest {
         FrameWithLabels myFrame = new FrameWithLabels();
 
         myFrame.setDefaultCloseOperation( WindowConstants.EXIT_ON_CLOSE );
-        myFrame.setSize( 300, 180 ); // set frame size
+        myFrame.setSize( 300, 180 ); // set frame size (x,y)
         myFrame.setVisible( true ); // display frame
     }
 }
@@ -42,7 +42,7 @@ class FrameWithLabels extends JFrame {
         add( label1 ); // add label1 to JFrame
 
         // JLabel constructor with string, Icon and alignment arguments
-        Icon myIcon = new ImageIcon( getClass().getResource( "imgBoutonRainbow.png" ) );
+        Icon myIcon = new ImageIcon( getClass().getResource( "/resource/imgBoutonRainbow.png" ) );
         label2 = new JLabel( "Label with text and icon on left", myIcon, SwingConstants.LEFT );
         label2.setToolTipText( "This is label2" );
         add( label2 ); // add label2 to JFrame
