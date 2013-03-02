@@ -10,6 +10,10 @@
 *.ear
 bin/
 
+#---Excluded from previously defined ignore (means DON'T ignore)
+!IntelliJIDEA*.jar
+
+
 #-----Ignore Eclipse files
 .metadata
 
@@ -21,3 +25,4 @@ out/
 
 #-----Other temporaty files
 .~*
+~*
