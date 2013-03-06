@@ -14,7 +14,7 @@ public class ScannerPlayAround {
 		Scanner myScan = new Scanner(System.in);
 		System.out.println(myScan.nextLine());
 		System.out.println();
-		
+
 		//Scanner from a string
 		String text1 = "EGit is an Eclipse plug-in (software component)";
 		System.out.printf("Decomposer le texte \"%s\"\n", text1);

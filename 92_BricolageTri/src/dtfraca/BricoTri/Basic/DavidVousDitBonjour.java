@@ -13,11 +13,11 @@ public class DavidVousDitBonjour {
 		Scanner myScanner = new Scanner(System.in);
 		System.out.print("Taper un text quelconque: ");
 		String laReponse = myScanner.nextLine();
-		
+
 		// Ceci est un commentaire simple
 		System.out.println(); // Ceci sera ignorer kdkdkdk
 		System.out.println("~" + laReponse + "~ a " + laReponse.length() + " caracteres");
-			
+
 	}
 
 }

@@ -1,4 +1,5 @@
 package dtfraca.BricoTri.MiniTaskManagement;
+
 import java.util.Date;
 
 /**
@@ -11,9 +12,9 @@ public class TaskItem {
 	private String description = "";
 	private boolean done = false;
 	private Date dueDate;
-	
+
 	public TaskItem(long id, String summary, String description, boolean done,
-                    Date dueDate) {
+						 Date dueDate) {
 		super();
 		this.id = id;
 		this.summary = summary;

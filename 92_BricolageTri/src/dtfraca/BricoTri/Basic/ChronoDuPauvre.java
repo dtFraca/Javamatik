@@ -13,7 +13,7 @@ import java.util.TimeZone;
 public class ChronoDuPauvre {
 
 	public static void main(String[] args) {
-		
+
 		System.out.println("Le Chronom�tre du Pauvre");
 		System.out.println("Presser [Enter] pour afficher temps écoulé");
 		System.out.println("------------------------------------------");
@@ -23,10 +23,10 @@ public class ChronoDuPauvre {
 
 		Scanner myScanner = new Scanner(System.in);
 		myScanner.nextLine(); // force wait for [Enter]
-		
+
 		ChronoDuPauvre.displayElapsedTime(lStartTime);
 	}
-	
+
 	private static void displayElapsedTime(long lStartTime) {
 		long lEndTime = new Date().getTime();
 
