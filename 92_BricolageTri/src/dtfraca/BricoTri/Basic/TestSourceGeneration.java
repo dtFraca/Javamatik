@@ -11,19 +11,19 @@ public class TestSourceGeneration {
 	private String _countryName;
 	private int _population;
 	private Date _nationalDay;
-	
+
 	public TestSourceGeneration(String _countryName, int _population) {
 		super();
 		this._countryName = _countryName;
 		this._population = _population;
-		
+
 		//This line was a block of code, which has become an elegant line
 		//thanks to Refactor - Extract Method
 		int cumulTotal = this.calculateCumulTotal();
 	}
 
 	/**
-	 * This method were created by Refactoring 
+	 * This method were created by Refactoring
 	 * (Select a chunk of code somewhere, Select Refactoring / Extract Method)
 	 * Then Eclipse creates the method and replaces the original code by a call to the method
 	 * All we need to do is to re-arrange a little bit the code (adding param, return, etc.)

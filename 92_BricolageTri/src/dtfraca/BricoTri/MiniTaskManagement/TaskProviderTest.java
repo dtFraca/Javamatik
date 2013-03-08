@@ -14,9 +14,9 @@ public class TaskProviderTest {
 		if (myTodoList.size() == 5)
 			System.out.println("***** CORRECT Item Count: " + myTodoList.size() + " *****");
 		else {
-			throw new RuntimeException();			
+			throw new RuntimeException();
 		}
-		
+
 		// Test Block Comment: Ctrl-Shift-/ (Uncomment Ctrl-Shift-\)
 	}
 

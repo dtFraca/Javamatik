@@ -6,10 +6,10 @@ public class A1_DemoForWhile {
 	 * Exemple elementaire de boucles For & While. Notion a apprendre:
 	 * 1. FOR  : a utiliser qd on connait le nombre exact d'iterations
 	 * 2. WHILE: a utiliser qd on ne sait pas forcement le nb de boucles,
-	 *           mais on connait la fin de la condition de boucle
-	 * 3. Il est possible de quitter une boucle par l'instruction break  
+	 * mais on connait la fin de la condition de boucle
+	 * 3. Il est possible de quitter une boucle par l'instruction break
 	 * 4. kk++ (ou ++kk) signifie kk = kk +1
-	 * 
+	 * <p/>
 	 * 2013-02-03 - Tri
 	 */
 	public static void main(String[] args) {
@@ -32,8 +32,8 @@ public class A1_DemoForWhile {
 			}
 			System.out.println();
 		}
-		
-		
+
+
 		//---------------------------------------
 		// boucle WHILE #1 (imite exactement FOR)
 		// la condition de fin de boucle est connu d'avance dans la condition while ()
@@ -54,13 +54,13 @@ public class A1_DemoForWhile {
 		while (true) {
 			System.out.printf("%d, ", kk);
 			kk++;
-			
+
 			// durant l'execution de la boucle, quitter par break selon certaine condition 
 			if (kk >= 6) {
 				break;
 			}
 		}
-		
+
 		//---------------------------------------
 		// FOR pour afficher l'alphabet
 		// Code Ascii: http://www.ascii-code.com/
@@ -70,14 +70,14 @@ public class A1_DemoForWhile {
 			char charLettre = (char) codeAscii; // convert int -> char
 			System.out.printf("%s", charLettre);
 		}
-		
+
 		System.out.println("\n\nAlphabet: a-z (code Ascii 97 -> 122)");
 		for (int codeAscii = 97; codeAscii <= 122; codeAscii++) {
 			char charLettre = (char) codeAscii; // convert int -> char
 			System.out.printf("%s", charLettre);
 		}
-			
-		
+
+
 	}
 
 }

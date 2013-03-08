@@ -11,15 +11,15 @@ public class EchoFrappe {
 	public static void main(String[] args) {
 		// Afficher la question
 		System.out.print("Veuillez entrez votre nom: ");
-	
+
 		// capturer user input du clavier 
 		Scanner myScanner = new Scanner(System.in);
 		String username = myScanner.nextLine();
 		myScanner.close();
-		
+
 		//afficher resulat
-	
-		System.out.printf("Votre nom est............: %s", username) ;
+
+		System.out.printf("Votre nom est............: %s", username);
 	}
 
 }
