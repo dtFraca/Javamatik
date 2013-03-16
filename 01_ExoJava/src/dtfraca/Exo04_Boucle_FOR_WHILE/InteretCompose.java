@@ -10,55 +10,43 @@ import java.util.Scanner;
 public class InteretCompose {
 	public static void main(String[] args) {
 
-		System.out.print("Veuillez entrez une sommes: ");
+		System.out.print("Somme initiale d'investissement: ");
 		Scanner myScan = new Scanner(System.in);
-		double montantInitial = myScan.nextInt();
-		double unitInitial = (double) montantInitial;
-		System.out.printf("Montant Initial : %4f\n\n", montantInitial);
+		double depotInitial = myScan.nextDouble();
+		double tauxInteret = 0.05d; // 5%
+
+		System.out.printf("Montant Initial : %.2f\n\n", depotInitial);
 		
-		double unitRestant = 0;
+		double capitalAn1 = depotInitial + (depotInitial * tauxInteret);
+		System.out.printf("Année 1: %.2f\n", capitalAn1);
 
-		double annee1 = (double) (unitInitial * 0.05);
-		unitRestant = unitInitial * 0.05 + unitInitial ;
-		System.out.printf(" Anné(s) 1: %.2f\n" , unitRestant);
+		//double capitalAn2 = capitalAn1 + (capitalAn1 * tauxInteret);
+		double capitalAn2 = capitalAn1 * (1.0 + tauxInteret);// capitalAn1 + (capitalAn1 * tauxInteret);
+		System.out.printf("Année 2: %.2f\n", capitalAn2);
 
-		double annees2 = (double) (unitRestant / 0.05 );
-		unitRestant = unitRestant  * 0.05 + unitRestant;
-		System.out.printf(" Anné(s) 2: %.2f\n", unitRestant);
+		double capitalAn3 = capitalAn2 + (capitalAn2 * tauxInteret);
+		System.out.printf("Année 3: %.2f\n", capitalAn3);
 
+		double capitalAn4 = capitalAn3 + (capitalAn3 * tauxInteret);
+		System.out.printf("Année 4: %.2f\n", capitalAn4);
 
-		double annees3 = (double) (unitRestant  / 0.05);
-		unitRestant = unitRestant  * 0.05 + unitRestant;
-		System.out.printf(" Anné(s) 3: %.2f\n",unitRestant);
+		double capitalAn5 = capitalAn4 + (capitalAn4 * tauxInteret);
+		System.out.printf("Année 5: %.2f\n", capitalAn5);
 
-		double annees4 = (double) (unitRestant  / 0.05);
-		unitRestant = unitRestant  * 0.05 + unitRestant;
-		System.out.printf(" Anné(s) 4: %.2f\n",unitRestant);
+		double capitalAn6 = capitalAn5 + (capitalAn5 * tauxInteret);
+		System.out.printf("Année 6: %.2f\n", capitalAn6);
 
-		double annees5 = (double) (unitRestant  / 0.05);
-		unitRestant = unitRestant  * 0.05 + unitRestant;
-		System.out.printf( "Anné(s) 5: %.2f\n", unitRestant);
+		double capitalAn7 = capitalAn6 + (capitalAn6 * tauxInteret);
+		System.out.printf("Année 7: %.2f\n", capitalAn7);
 
-		double annes6 = (double) (unitRestant  / 0.05);
-		unitRestant = unitRestant  * 0.05 + unitRestant;
-		System.out.printf(" Anné(s) 6: %.2f\n",unitRestant);
+		double capitalAn8 = capitalAn7 + (capitalAn7 * tauxInteret);
+		System.out.printf("Année 8: %.2f\n", capitalAn8);
 
-		double annes7 = (double) (unitRestant / 0.05);
-		unitRestant = unitRestant  * 0.05 + unitRestant;
-		System.out.printf(" Anné(s) 7: %.2f\n", unitRestant);
+		double capitalAn9 = capitalAn8 + (capitalAn8 * tauxInteret);
+		System.out.printf("Année 9: %.2f\n", capitalAn9);
 
-		double annees8 = (double) (unitRestant / 0.05);
-		unitRestant= unitRestant * 0.05 + unitRestant;
-		System.out.printf(" Anné(s) 8: %.2f\n", unitRestant);
-
-		double annees9 = (double) (unitRestant / 0.05);
-		unitRestant= unitRestant * 0.05 + unitRestant;
-		System.out.printf("Anné(s) 9: %.2f\n", unitRestant);
-
-		double annees10 = (double) (unitRestant / 0.05);
-		unitRestant= unitRestant * 0.05 + unitRestant;
-		System.out.printf("Anné(s) 10: %.2f\n", unitRestant);
-
-		}
+		double capitalAn10 = capitalAn9 + (capitalAn9 * tauxInteret);
+		System.out.printf("Année10: %.2f\n", capitalAn10);
+	}
 	
 	}
