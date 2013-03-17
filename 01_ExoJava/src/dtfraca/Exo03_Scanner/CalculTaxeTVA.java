@@ -11,44 +11,43 @@ public class CalculTaxeTVA {
 	public static void main(String[] args) {
 		System.out.print("Veuillez entrez le prix d'un produit: ");
 		Scanner myScan = new Scanner(System.in);
-		double montantInitial = myScan.nextDouble();
+		double prixHorsTaxe = myScan.nextDouble();
 
-		System.out.printf("MONTANT: %.2f\n\n", montantInitial);
+		System.out.printf("MONTANT: %.2f\n\n", prixHorsTaxe);
 
-		double montantRestant = 0;
+		double tvaFrance = 19.6d ; // equivalent = 0.196
+		double taxe = prixHorsTaxe * (tvaFrance / 100.0);
+		System.out.printf("Prix apres taxe %.2f€ en France........ (taxe: %.2f%% => %.2f€)\n", prixHorsTaxe + taxe, tvaFrance, taxe);
 
-		double franceTVA = (double) montantInitial * 0.196 + montantInitial;
-		montantRestant = montantInitial * 0.196 + montantInitial;
-		System.out.printf("Votre produit coûte %.2f€ en France (taxe: 19.60 => %.2f€)\n", franceTVA, montantRestant - montantInitial);
+		double tvaAllemagne = 19.0d ; // equivalent = 0.19
+		taxe = prixHorsTaxe * (tvaAllemagne / 100.0);
+		System.out.printf("Prix apres taxe %.2f€ en Allemagne..... (taxe: %.2f%% => %.2f€)\n", prixHorsTaxe + taxe, tvaAllemagne, taxe);
 
-		double allemagneTVA = (double) montantInitial * 0.19 + montantInitial;
-		montantRestant = montantInitial * 0.19 + montantInitial;
-		System.out.printf("Votre produit coûte %.2f€ en Allemagne (taxe: 19 => %.2f€)\n", allemagneTVA, montantRestant - montantInitial);
+		double tvaItalie = 23.0d ;
+		double tvaUK = 18.0d ;
+		double tvaCAOnt = 13.0d ;
+		double tvaCAAB = 5.0d ;
+		double tvaUSCA = 10.0d ;
 
-		double italieTVA = (double) montantInitial * 0.23 + montantInitial;
-		montantRestant = montantInitial * 0.23 + montantInitial;
-		System.out.printf("Votre produit coûte %.2f€ en Italie (taxe: 23 => %.2f€)\n", italieTVA, montantRestant - montantInitial);
+		taxe = prixHorsTaxe * (tvaItalie / 100.0);
+		System.out.printf("Prix apres taxe %.2f€ en Italie........ (taxe: %.2f%% => %.2f€)\n", prixHorsTaxe + taxe, tvaItalie, taxe);
 
-		double ukTVA = (double) montantInitial * 0.18 + montantInitial;
-		montantRestant = montantInitial * 0.18 + montantInitial;
-		System.out.printf("Votre produit coûte %.2f€ en Angleterre (taxe: 18 => %.2f€)\n", ukTVA, montantRestant - montantInitial);
+		taxe = prixHorsTaxe * (tvaUK / 100.0);
+		System.out.printf("Prix apres taxe %.2f€ en Angleterre.... (taxe: %.2f%% => %.2f€)\n", prixHorsTaxe + taxe, tvaUK, taxe);
 
-		double cpTVA = (double) montantInitial * 0.13 + montantInitial;
-		montantRestant = montantInitial * 0.13 + montantInitial;
-		System.out.printf("Votre produit coûte %.2f€ au Canada Ontario (taxe: 13 => %.2f€)\n", cpTVA, montantRestant - montantInitial);
+		taxe = prixHorsTaxe * (tvaCAOnt / 100.0);
+		System.out.printf("Prix apres taxe %.2f€ en Canada Ontario (taxe: %.2f%% => %.2f€)\n", prixHorsTaxe + taxe, tvaCAOnt, taxe);
 
-		double caTVA = (double) montantInitial * 0.05 + montantInitial;
-		montantRestant = montantInitial * 0.05 + montantInitial;
-		System.out.printf("Votre produit coûte %.2f€ au Canada Alberta (taxe: 5 => %.2f€)\n", caTVA, montantRestant - montantInitial);
+		taxe = prixHorsTaxe * (tvaCAAB / 100.0);
+		System.out.printf("Prix apres taxe %.2f€ en Canada Alberta (taxe: %2.2f%% => %.2f€)\n", prixHorsTaxe + taxe, tvaCAAB, taxe);
 
-		double californieTVA = (double) montantInitial * 0.1 + montantInitial;
-		montantRestant = montantInitial * 0.1 + montantInitial;
-		System.out.printf("Votre produit coûte %.2f€ en californie (taxe: 10 => %.2f€)\n", franceTVA, montantRestant - montantInitial);
-
-
-
-
-
+		taxe = prixHorsTaxe * (tvaUSCA / 100.0);
+		System.out.printf("Prix apres taxe %.2f€ en Californie.... (taxe: %.2f%% => %.2f€)\n", prixHorsTaxe + taxe, tvaUSCA, taxe);
 
 	}
 }
+
+
+
+
+

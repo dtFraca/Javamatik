@@ -21,6 +21,8 @@ public class ExplorerString {
 		System.out.printf("Position du mot \"facture\": %d\n", demoTxt.indexOf("facture"));
 		System.out.printf("Extraire le mot \"bondir\" et le mettre en majuscule: [%s]\n", demoTxt.substring(34, 40).toUpperCase());
 		String monNom = "david";
-		System.out.printf("Hashcode de \"%s\": %s", monNom, monNom.hashCode());
+		System.out.printf("Hashcode de \"%s\": %s\n", monNom, monNom.hashCode());
+		System.out.printf("CharArray: %s\n", demoTxt.toCharArray());
+
 	}
 }

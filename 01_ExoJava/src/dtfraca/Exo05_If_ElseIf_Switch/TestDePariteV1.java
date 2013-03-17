@@ -17,7 +17,7 @@ public class TestDePariteV1 {
 
 		System.out.printf("%f divisé par 2 est égal à %f", n1, n1/2);
 
-		if (n1%2 == 0 ) {
+		if (n1 % 2 == 0 ) {
 			System.out.printf(" donc %f est paire",n1);
 		}
 	else {
