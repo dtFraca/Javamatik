@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Arrays;
 
 /**
- * Explore class File giving properties of a File or Directory (Folder)
+ * Explore class File giving properties of a File or Directory (Size, Date, Path, Exec status, etc)
  *
  * 2013-03-15 - tri
  */
@@ -65,10 +65,11 @@ public class A1_FileInfo {
 		for (String fileNameInDir : dirFiles) {
 			File file1 = new File(fileNameInDir);
 
-			System.out.printf("\t%-40s (%s) %5d KB\n",
+			System.out.printf("\t%-40s (%s) %5d KB\t%8d bytes\n",
 					fileNameInDir,
 					(file1.isDirectory() ? "DIR " : "FILE"),
-					file1.length() / 1000
+					file1.length() / 1000,
+					file1.length()
 					);
 		}
 
