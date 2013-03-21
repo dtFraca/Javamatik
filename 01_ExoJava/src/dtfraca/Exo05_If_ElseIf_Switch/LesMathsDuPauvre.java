@@ -40,14 +40,22 @@ public class LesMathsDuPauvre {
 
 			case 3:
 				System.out.print("Circonference, donner valeur rayon: ");
+				double rayon = paramCalcul.nextDouble();
+				double circonference = Math.PI * rayon * 2;
+				System.out.printf("La circonférence de votre rayon est (%.1f): %.2f", rayon, circonference);
 				break;
 
 			case 4:
 				System.out.print("Conversion binaire, donner valeur décimal entière: ");
+				double valeurAConvertir = paramCalcul.nextDouble();
 				break;
 
 			case 5:
 				System.out.print("2^N, donner valeur puissance N: ");
+				double puissance2 = paramCalcul.nextDouble();
+				double puissanceN = paramCalcul.nextDouble();
+				double valeurPuissance = Math.pow(puissance2, puissanceN);
+				System.out.printf("%.1f à la puissance %.1f est égal à %.1f", puissance2, puissanceN, valeurPuissance);
 				break;
 
 

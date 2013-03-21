@@ -16,6 +16,21 @@ public class OperateurLogique {
 		int anneeCourante = Calendar.getInstance().get(Calendar.YEAR);
 		int age = anneeCourante - anneeNaissance;
 
+		if (anneeNaissance == 1987) {
+
+		}
+
+		else {
+			System.out.println("Vous n'êtes pas né(e) en 1987");
+		}
+
+		if (age < 18 && anneeNaissance % 4 == 0) {
+			System.out.println("Gagner cadeau surprise (age < 18 et ne dans une annee bisextile");
+		}
+		else {
+			System.out.println("Pas de cadeau");
+		}
+
 		if (anneeNaissance % 2 == 0) {
 			System.out.println("L'année que vous avez entrée est pair");
 		}
