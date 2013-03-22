@@ -4,8 +4,8 @@ import java.util.Calendar;
 import java.util.Scanner;
 
 /**
- * Class Description: ?
- * <p/>
+ * Divers usage de'operateurs logiques dans test IF: EGAL == , PAS EGAL != , ET && , OU ||
+ *
  * 2013-03-17 - david
  */
 public class OperateurLogique {
@@ -25,7 +25,7 @@ public class OperateurLogique {
 		}
 
 		if (age < 18 && anneeNaissance % 4 == 0) {
-			System.out.println("Gagner cadeau surprise (age < 18 et ne dans une annee bisextile");
+			System.out.println("Gagner cadeau surprise (age < 18 et né dans une année bissextile");
 		}
 		else {
 			System.out.println("Pas de cadeau");
@@ -38,38 +38,22 @@ public class OperateurLogique {
 			System.out.println("L'année que vous avez entrée est impair");
 		}
 
-		/*
-		ERREUR: ne tient pas compte de la condition: "divisible par 400"
-		EN PLUS: trop complique (difficile a lire)
-
-		if (anneeNaissance % 4 == 0) {
-			//System.out.println("L'année entrée est bisextile");
-
-			if (anneeNaissance % 100 == 0) {
-				System.out.println("L'année n'est pas bisextile (divisible par 4 ET par 100)");
-			} else {
-				System.out.println("L'année est bisextile");
-			}
-
-		} else {
-			System.out.println("L'année n'est pas bisextile");
-		}
-		*/
-
 		// Année bissextile: http://fr.wikipedia.org/wiki/Ann%C3%A9e_bissextile
-		// Condition1: soit divisibles par 4 _ET_ non divisibles par 100
+		// Condition1: divisible par 4 _ET_ NON divisible par 100
 		// OU
-		// Condition2: divisibles par 400
+		// Condition2: divisible par 400
 
-		boolean cond1Bissextile = (anneeNaissance % 4 == 0 && anneeNaissance % 100 > 0);
+		boolean cond1Bissextile = (anneeNaissance % 4 == 0 && anneeNaissance % 100 != 0);
 		boolean cond2Bissextile = (anneeNaissance % 400 == 0);
 
-		if (cond1Bissextile || cond2Bissextile)
+		// Test Equivalent (sans utiliser variables):
+		// if ( (anneeNaissance % 4 == 0 && anneeNaissance % 100 != 0) || anneeNaissance % 400 )
+		if (cond1Bissextile || cond2Bissextile) // equiv:
 		{
-			System.out.println("L'année est bisextile");
+			System.out.println("L'année est bissextile");
 		}
 		else {
-			System.out.println("L'année n'est pas bisextile");
+			System.out.println("L'année n'est pas bissextile");
 		}
 
 
