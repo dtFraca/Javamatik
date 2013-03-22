@@ -40,7 +40,7 @@ public class A2_CollectionDemo {
 		}
 
 
-		System.out.println("\nList2: Before addAll");
+		System.out.println("\nList2: BEFORE addAll");
 		posItem = 1;
 		for (String str : list2) {
 			System.out.printf("%2d. %s\n", posItem++, str);
@@ -48,7 +48,7 @@ public class A2_CollectionDemo {
 
 		// Append string array androidVersions to List2
 		Collections.addAll(list2, androidVersions);
-		System.out.println("\nList2: After Collections.addAll(list2, androidVersions);");
+		System.out.println("\nList2: AFTER Collections.addAll(list2, androidVersions);");
 		posItem = 1;
 		for (String str : list2) {
 			System.out.printf("%2d. %s\n", posItem++, str);
@@ -63,6 +63,9 @@ public class A2_CollectionDemo {
 
 	/**
 	 * List Union WITHOUT duplicates (an item which is duplicated in either list or both is returned once)
+	 * NOTE: if duplicate is needed, just use standard Collections.addAll()
+	 * List <String> list2 = new ArrayList<String>();
+	 * Collections.addAll(list2, list1);
 	 */
 	private static <T> List<T> unionList(List<T> list1, List<T> list2) {
 		Set<T> set = new HashSet<T>();
@@ -75,6 +78,9 @@ public class A2_CollectionDemo {
 
 	/**
 	 * List Intersection WITHOUT duplicates (an item which is duplicated in either list or both is returned once)
+	 * NOTE: if duplicate is needed, just use standard Collections.retainAll()
+	 * List <String> listCommon = new ArrayList<String>(list2);
+	 * listCommon.retainAll(list1);
 	 */
 	private static <T> List<T> intersectionList(List<T> list1, List<T> list2) {
 		List<T> list = new ArrayList<T>();
