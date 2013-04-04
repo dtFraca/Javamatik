@@ -16,11 +16,7 @@ public class OperateurLogique {
 		int anneeCourante = Calendar.getInstance().get(Calendar.YEAR);
 		int age = anneeCourante - anneeNaissance;
 
-		if (anneeNaissance == 1987) {
-
-		}
-
-		else {
+		if (anneeNaissance != 1987) {
 			System.out.println("Vous n'êtes pas né(e) en 1987");
 		}
 

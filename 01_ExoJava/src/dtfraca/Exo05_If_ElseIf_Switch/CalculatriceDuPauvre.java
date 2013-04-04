@@ -15,8 +15,23 @@ public class CalculatriceDuPauvre {
 		double n1 = scanExpCalc.nextDouble();
 		String symbolOperateur = scanExpCalc.next();
 		double n2 = scanExpCalc.nextDouble();
-		System.out.printf("n1 = %.2f\nOperateur = %s\nn2 = %.2f\n", n1, symbolOperateur, n2);
+		//System.out.printf("n1 = %.2f\nOperateur = %s\nn2 = %.2f\n", n1, symbolOperateur, n2);
 
+		if (symbolOperateur.equals("+")) {
+			System.out.printf("%.2f %s %.2f = %.2f", n1, symbolOperateur, n2, n1 + n2);
+		}
+
+		if (symbolOperateur.equals("-")) {
+			System.out.printf("%.2f %s %.2f = %.2f", n1, symbolOperateur, n2, n1 - n2);
+		}
+
+		if (symbolOperateur.equals("*")) {
+			System.out.printf("%.2f %s %.2f = %.2f", n1 ,symbolOperateur, n2, n1 * n2);
+		}
+
+		if (symbolOperateur.equals("/")) {
+			System.out.printf("%.2f %s %.2f = %.2f", n1, symbolOperateur, n2, n1 / n2);
+		}
 	}
 }
 
