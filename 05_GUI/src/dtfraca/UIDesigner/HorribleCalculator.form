@@ -16,6 +16,10 @@
     <rowspec value="center:max(d;4px):noGrow"/>
     <rowspec value="top:4dlu:noGrow"/>
     <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
     <colspec value="fill:d:noGrow"/>
     <colspec value="left:4dlu:noGrow"/>
     <colspec value="fill:d:grow"/>
@@ -75,29 +79,9 @@
           <text value="Operator"/>
         </properties>
       </component>
-      <component id="d0253" class="javax.swing.JRadioButton" binding="radioAddition">
-        <constraints>
-          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <forms/>
-        </constraints>
-        <properties>
-          <font name="Droid Sans" size="12"/>
-          <text value="Addition"/>
-        </properties>
-      </component>
-      <component id="950ba" class="javax.swing.JRadioButton" binding="radioSubstraction">
-        <constraints>
-          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <forms/>
-        </constraints>
-        <properties>
-          <font name="Droid Sans" size="12"/>
-          <text value="Substraction"/>
-        </properties>
-      </component>
       <component id="7e687" class="javax.swing.JLabel">
         <constraints>
-          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
           <forms/>
         </constraints>
         <properties>
@@ -106,7 +90,7 @@
       </component>
       <component id="317e6" class="javax.swing.JTextField" binding="txtResult">
         <constraints>
-          <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
           <forms defaultalign-horz="false"/>
@@ -119,16 +103,35 @@
       </component>
       <component id="8c5ad" class="javax.swing.JButton" binding="btnCalculate">
         <constraints>
-          <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="16" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
           <forms/>
         </constraints>
         <properties>
           <text value="Calculate"/>
         </properties>
       </component>
+      <component id="7903d" class="javax.swing.JLabel" binding="lblMessage">
+        <constraints>
+          <grid row="18" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
+      <component id="796ec" class="javax.swing.JRadioButton" binding="radioDivision">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <font name="Droid Sans" size="12"/>
+          <text value="Division"/>
+        </properties>
+      </component>
       <component id="55ff" class="javax.swing.JRadioButton" binding="radioMultiplication">
         <constraints>
-          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
           <forms/>
         </constraints>
         <properties>
@@ -136,14 +139,69 @@
           <text value="Multiplication"/>
         </properties>
       </component>
-      <component id="796ec" class="javax.swing.JRadioButton" binding="radioDivision">
+      <component id="950ba" class="javax.swing.JRadioButton" binding="radioSubstraction">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <font name="Droid Sans" size="12"/>
+          <text value="Substraction"/>
+        </properties>
+      </component>
+      <component id="d0253" class="javax.swing.JRadioButton" binding="radioAddition">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <font name="Droid Sans" size="12"/>
+          <text value="Addition"/>
+        </properties>
+      </component>
+      <component id="50eb5" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="Look &amp; Feel"/>
+        </properties>
+      </component>
+      <component id="75641" class="javax.swing.JRadioButton" binding="radioLaFGTK">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="GTK"/>
+        </properties>
+      </component>
+      <component id="520a7" class="javax.swing.JRadioButton" binding="radioLaFMetal">
+        <constraints>
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="Metal"/>
+        </properties>
+      </component>
+      <component id="37fc9" class="javax.swing.JRadioButton" binding="radioLaFNimbus">
         <constraints>
           <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
           <forms/>
         </constraints>
         <properties>
-          <font name="Droid Sans" size="12"/>
-          <text value="Division"/>
+          <text value="Nimbus"/>
+        </properties>
+      </component>
+      <component id="24843" class="javax.swing.JRadioButton" binding="radioLaFCDEMotif">
+        <constraints>
+          <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="CDE / Motif"/>
         </properties>
       </component>
     </children>
@@ -154,6 +212,13 @@
       <member id="950ba"/>
       <member id="55ff"/>
       <member id="796ec"/>
+    </group>
+    <group name="LookAndFeel">
+      <member id="24843"/>
+      <member id="24843"/>
+      <member id="75641"/>
+      <member id="520a7"/>
+      <member id="37fc9"/>
     </group>
   </buttonGroups>
 </form>
