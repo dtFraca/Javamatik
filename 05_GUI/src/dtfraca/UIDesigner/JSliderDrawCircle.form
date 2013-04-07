@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="dtfraca.UIDesigner.JSliderDrawCircle">
+  <grid id="27dc6" binding="panel1" custom-create="true" default-binding="true" layout-manager="FormLayout">
+    <rowspec value="center:d:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:d:grow"/>
+    <colspec value="fill:264px:grow"/>
+    <constraints>
+      <xy x="20" y="3" width="276" height="362"/>
+    </constraints>
+    <properties>
+      <opaque value="true"/>
+      <preferredSize width="280" height="280"/>
+    </properties>
+    <border type="etched" title="Diameter = Slider Value"/>
+    <children>
+      <component id="8b60f" class="javax.swing.JSlider" binding="sliderDiameter">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="10" fill="1" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <majorTickSpacing value="10"/>
+          <maximum value="280"/>
+          <minimum value="1"/>
+          <minorTickSpacing value="5"/>
+          <paintLabels value="false"/>
+          <paintTicks value="true"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
