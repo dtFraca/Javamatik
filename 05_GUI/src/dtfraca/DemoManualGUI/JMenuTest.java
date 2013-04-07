@@ -19,8 +19,11 @@ import javax.swing.JMenuItem;
 import javax.swing.JMenuBar;
 
 /**
- * "Java for developers, page 700, 22.4 Using Menus with Frames"
- * <p/>
+ * Demo JMenuBar, JMenu, JMenuItem, ButtonGroup, JRadioButtonMenuItem, JCheckBoxMenuItem
+ * This is the improved version (better syntax, better class organization) found in
+ * Book "Java for developers, page 700, 22.4 Using Menus with Frames"
+ * NOTE: this class is code manually (no GUI editor)
+ *
  * 2013-04-07 - tri
  */
 public class JMenuTest {
@@ -41,15 +44,14 @@ class FrameWithMenu extends JFrame {
 	private JRadioButtonMenuItem[] colorItems; // color menu items
 	private JRadioButtonMenuItem[] fonts; // font menu items
 	private JCheckBoxMenuItem[] styleItems; // font style menu items
-	private JLabel lblSampleText; // displays sample text
-	private ButtonGroup fontButtonGroup; // manages font menu items
-	private ButtonGroup colorButtonGroup; // manages color menu items
+	private JLabel lblSampleText; // sample text to show the effects of Font, Color, Style
+	private ButtonGroup fontButtonGroup; // grouping Radio Buttons for Font selection (so that only 1 item can be selected at a time)
+	private ButtonGroup colorButtonGroup; // grouping Radio Buttons for Color selection (so that only 1 item can be selected at a time)
 	private int currFontStyle = Font.PLAIN; // used to create style for font
 
 
 	public FrameWithMenu() {
 		super("Using JMenus");
-
 
 		JMenuBar barMenu = new JMenuBar(); // create menu bar
 		setJMenuBar(barMenu);
@@ -57,96 +59,98 @@ class FrameWithMenu extends JFrame {
 		//=== Menu Item "File"=======================
 		JMenu fileMenu = new JMenu("File"); // create file menu
 		fileMenu.setMnemonic('F'); // set mnemonic to F
+		barMenu.add(fileMenu);
 
 		JMenuItem aboutItem = new JMenuItem("About...");
-		aboutItem.setMnemonic('A'); // set mnemonic to A
-		fileMenu.add(aboutItem); // add about item to file menu
+		aboutItem.setMnemonic('A');
+		fileMenu.add(aboutItem);
+
+		// anonymous inner class: display message dialog when user clicks About...
 		aboutItem.addActionListener(
-			new ActionListener() // anonymous inner class
+			new ActionListener()
 			{
-				// display message dialog when user selects About...
+				//
 				public void actionPerformed(ActionEvent event) {
 					JOptionPane.showMessageDialog(FrameWithMenu.this,
 							"This is an example\nof using menus",
-							"About", JOptionPane.PLAIN_MESSAGE);
+							"About",
+							JOptionPane.PLAIN_MESSAGE);
 				}
 			}
 		);
 
 		JMenuItem exitItem = new JMenuItem("Exit"); // create exit item
-		exitItem.setMnemonic('x'); // set mnemonic to x
-		fileMenu.add(exitItem); // add exit item to file menu
+		exitItem.setMnemonic('x');
+		fileMenu.add(exitItem);
+
+		// anonymous inner class: terminate application when user clicks exitItem
 		exitItem.addActionListener(
-				new ActionListener() // anonymous inner class
+				new ActionListener()
 				{
-					// terminate application when user clicks exitItem
 					public void actionPerformed(ActionEvent event) {
 						System.exit(0); // exit application
 					}
 				}
 		);
 
-		barMenu.add(fileMenu); // add Format menu to menu bar
 
 
 		//=== Menu Item "Format"=======================
 		JMenu formatMenu = new JMenu("Format"); // create format menu
-		formatMenu.setMnemonic('r'); // set mnemonic to r
+		formatMenu.setMnemonic('r');
+		barMenu.add(formatMenu);
+
+		MyMenuItemListener itemHandler = new MyMenuItemListener(); // common handler for MenuItems
 
 		// array listing string colors
 		String[] colors = {"Black", "Blue", "Red", "Green"};
 		JMenu colorMenu = new JMenu("Color"); // create color menu
-		colorMenu.setMnemonic('C'); // set mnemonic to C
+		colorMenu.setMnemonic('C');
 
 		// create radio button menu items for colors
 		colorItems = new JRadioButtonMenuItem[colors.length];
-		colorButtonGroup = new ButtonGroup(); // manages colors
-		ItemHandler itemHandler = new ItemHandler(); // handler for colors
+		colorButtonGroup = new ButtonGroup(); // Grouping all color MenuItems together (so that only 1 item can be selected at a time)
 
 		// create color radio button menu items
 		for (int count = 0; count < colors.length; count++) {
-			colorItems[count] =
-					new JRadioButtonMenuItem(colors[count]); // create item
+			colorItems[count] = new JRadioButtonMenuItem(colors[count]); // create item
 			colorMenu.add(colorItems[count]); // add item to color menu
 			colorButtonGroup.add(colorItems[count]); // add to group
 			colorItems[count].addActionListener(itemHandler);
 		}
 		colorItems[0].setSelected(true); // select first Color item
-		formatMenu.add(colorMenu); // add color menu to format menu
-		formatMenu.addSeparator(); // add separator in menu
+		formatMenu.add(colorMenu);
+		formatMenu.addSeparator();
 
 		// array listing font names
 		String[] fontNames = {"Serif", "Monospaced", "SansSerif"};
-		JMenu fontMenu = new JMenu("Font"); // create font menu
+		JMenu fontMenu = new JMenu("Font");
 		fontMenu.setMnemonic('n');
 
 		// create radio button menu items for font names
 		fonts = new JRadioButtonMenuItem[fontNames.length];
-		fontButtonGroup = new ButtonGroup(); // manages font names
+		fontButtonGroup = new ButtonGroup(); // Grouping all font MenuItems together (so that only 1 item can be selected at a time)
 
 		// create Font radio button menu items
 		for (int count = 0; count < fonts.length; count++) {
 			fonts[count] = new JRadioButtonMenuItem(fontNames[count]);
-			fontMenu.add(fonts[count]); // add font to font menu
-			fontButtonGroup.add(fonts[count]); // add to button group
-			fonts[count].addActionListener(itemHandler); // add handler
+			fontMenu.add(fonts[count]);
+			fontButtonGroup.add(fonts[count]);
+			fonts[count].addActionListener(itemHandler);
 		}
 		fonts[0].setSelected(true); // select first Font menu item
-		fontMenu.addSeparator(); // add separator bar to font menu
+		fontMenu.addSeparator();
+
 		String[] styleNames = {"Bold", "Italic"}; // names of styles
 		styleItems = new JCheckBoxMenuItem[styleNames.length];
 
-		StyleHandler styleHandler = new StyleHandler();
-
 		// create style checkbox menu items
 		for (int count = 0; count < styleNames.length; count++) {
-			styleItems[count] =
-					new JCheckBoxMenuItem(styleNames[count]); // for style
-			fontMenu.add(styleItems[count]); // add to font menu
-			styleItems[count].addItemListener(styleHandler); // handler
+			styleItems[count] = new JCheckBoxMenuItem(styleNames[count]);
+			fontMenu.add(styleItems[count]);
+			styleItems[count].addItemListener(itemHandler);
 		}
-		formatMenu.add(fontMenu); // add Font menu to Format menu
-		barMenu.add(formatMenu); // add Format menu to menu bar
+		formatMenu.add(fontMenu);
 
 
 		//======= set up label to display text =====================
@@ -158,9 +162,13 @@ class FrameWithMenu extends JFrame {
 	} // end Constructor
 
 
-	// inner class to handle action events from menu items
-	private class ItemHandler implements ActionListener {
-		// process color and font selections
+	/**
+	 * Inner class Listener to handle events related to MenuItem
+	 */
+	private class MyMenuItemListener implements ActionListener, ItemListener {
+
+		// When an item is selected
+		@Override
 		public void actionPerformed(ActionEvent event) {
 
 			// process color selection
@@ -179,12 +187,10 @@ class FrameWithMenu extends JFrame {
 			}
 			repaint(); // redraw application
 		}
-	}
 
 
-	private class StyleHandler implements ItemListener
-	{
-		// process font style selections
+		// When a JCheckBoxMenuItem changes state
+		@Override
 		public void itemStateChanged( ItemEvent e )
 		{
 			// determine which items are checked and create Font
@@ -203,4 +209,5 @@ class FrameWithMenu extends JFrame {
 			repaint(); // redraw application
 		}
 	}
+
 }
