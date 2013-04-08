@@ -1,4 +1,4 @@
-package dtfraca.DemoManualGUI;
+package dtfraca.LayoutManager;
 
 import java.awt.GridLayout;
 import java.awt.Container;

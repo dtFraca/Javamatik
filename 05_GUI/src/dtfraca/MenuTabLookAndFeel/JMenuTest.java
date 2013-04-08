@@ -1,4 +1,4 @@
-package dtfraca.DemoManualGUI;
+package dtfraca.MenuTabLookAndFeel;
 
 import java.awt.Color;
 import java.awt.Font;

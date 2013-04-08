@@ -1,4 +1,4 @@
-package dtfraca.DemoManualGUI;
+package dtfraca.GUIComponent;
 
 
 import java.awt.event.ActionListener;
@@ -32,7 +32,7 @@ class TextAreaFrame extends JFrame {
 
 /*
 		  Box is a subclass of Container that uses
-        a BoxLayout layout manager (discussed in detail in Section 22.9) to arrange the GUI
+        a BoxLayoutTest layout manager (discussed in detail in Section 22.9) to arrange the GUI
         components either horizontally or vertically. Box’s static method createHorizontalBox
         creates a Box that arranges components from left to right in the order that they’re attached.
 */

@@ -1,4 +1,4 @@
-package dtfraca.DemoManualGUI;
+package dtfraca.GUIComponent;
 
 import javax.swing.*;
 

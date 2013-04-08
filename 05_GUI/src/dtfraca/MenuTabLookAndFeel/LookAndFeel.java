@@ -1,4 +1,4 @@
-package dtfraca.DemoManualGUI;
+package dtfraca.MenuTabLookAndFeel;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -10,7 +10,7 @@ import javax.swing.*;
 /**
  * Demo UIManager, JComboBox, JRadioButton
  * This is the improved version (better syntax, better class organization) found in
- * Book "Java for developers, page 711, 22.6 Pluggable Look-and-Feel
+ * Book "Java for developers, page 711, 22.6 Pluggable Look-and-Feel"
  * NOTE: this class is code manually (no GUI editor)
  *
  * 2013-04-07 - tri
@@ -132,7 +132,7 @@ class LookAndFeelFrame extends JFrame
 					lblMessage.setText(String.format("This is a %s look-and-feel", lafNames[kk]));
 					// mirror de selected choice in the combobox
 					comboLaFNames.setSelectedIndex(kk);
-					changeTheLookAndFeel( kk );
+					changeTheLookAndFeel(kk);
 				}
 			}
 		}

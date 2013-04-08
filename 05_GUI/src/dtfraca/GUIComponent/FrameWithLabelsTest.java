@@ -1,4 +1,4 @@
-package dtfraca.DemoManualGUI;
+package dtfraca.GUIComponent;
 
 import java.awt.FlowLayout; // specifies how components are arranged
 import javax.swing.*;
