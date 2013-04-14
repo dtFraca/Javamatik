@@ -1,7 +1,8 @@
 <component name="libraryTable">
-  <library name="jgoodies-forms">
+  <library name="ExternalLibs">
     <CLASSES>
       <root url="jar:///usr/local/IntelliJ/lib/jgoodies-forms.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../miglayout-4.0-swing.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
