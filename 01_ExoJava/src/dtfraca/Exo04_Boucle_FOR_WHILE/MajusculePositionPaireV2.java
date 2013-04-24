@@ -12,7 +12,7 @@ public class MajusculePositionPaireV2 {
 
 		String phraseOriginal = "abcdefghijk-123";
 
-		System.out.printf("Phrase original = %s\n", phraseOriginal);
+		System.out.printf("Phrase original..................... = %s\n", phraseOriginal);
 		System.out.printf("Phrase avec majuscule position paire = ");
 
 
