@@ -9,33 +9,29 @@ package dtfraca.Exo04_Boucle_FOR_WHILE;
 public class MajusculePositionPaireV2 {
 	public static void main(String[] args) {
 
-
 		String phraseOriginal = "abcdefghijk-123";
-
-		System.out.printf("Phrase original..................... = %s\n", phraseOriginal);
-		System.out.printf("Phrase avec majuscule position paire = ");
-
+		String chaineFinale = "";
 
 		int indicePosition = 0;
 
 		for (Character unCarac : phraseOriginal.toCharArray()) {
-				indicePosition++;
+			indicePosition++;
 
-			String unMot = unCarac.toString();
+			//String uneLettre = unCarac.toString();
 
+			if (indicePosition % 2 == 0) {
+				//System.out.printf("%s", Character.toUpperCase(unCarac));
+				chaineFinale += Character.toUpperCase(unCarac);
 
+			}
+			else {
+				//System.out.printf("%s", unCarac);
+				//chaineFinale += unCarac;
+				chaineFinale = chaineFinale + unCarac; // Equivalent de chaineFinale += unCarac
 
-		if (indicePosition% 2 == 0) {
-			System.out.printf("%s", unMot.toUpperCase());
-
+			}
 		}
-		else {
-			System.out.printf("%s", unMot);
-		}
-
-
-
-
-		}
+		System.out.printf("Phrase original = %s\n", phraseOriginal);
+		System.out.printf("Chaine finale   = %s\n", chaineFinale);
 	}
 }

@@ -9,21 +9,25 @@ public class MajusculePositionPaireV1 {
 	public static void main(String[] args) {
 
 		String phraseOriginal = "abcdefghijk-123";
+		String chaineFinale = "";
 
-		System.out.printf("Phrase original = %s\n", phraseOriginal);
+		for (int aa = 0; aa < phraseOriginal.length(); aa++) {
 
-		for (int aa = 1; aa < phraseOriginal.length(); aa++) {
+			String unCarac = phraseOriginal.substring(aa, aa +1);
 
-		String unCarac = phraseOriginal.substring(aa, aa +1);
+			//aa +1 pour revenir au "comptage humain" 1-based
 
-			if (aa % 2 == 0) {
-				System.out.printf("%s", unCarac.toUpperCase());
+			if ( (aa +1) % 2 == 0) {
+				//System.out.printf("%s", unCarac.toUpperCase());
+				chaineFinale += unCarac.toUpperCase();
 			}
-
 			else {
-				System.out.printf("%s", unCarac);
+				//System.out.printf("%s", unCarac);
+				chaineFinale += unCarac;
 			}
-
 		}
+
+		System.out.printf("Phrase originale = %s\n", phraseOriginal);
+		System.out.printf("Chaine finale		e= %s\n", chaineFinale);
 	}
 }
