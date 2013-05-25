@@ -1,4 +1,4 @@
-package Exo05_If_Elself_Switch;
+package dtfraca.Exo06_Random;
 
 import java.util.Scanner;
 

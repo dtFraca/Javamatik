@@ -1,4 +1,4 @@
-package Exo05_If_Elself_Switch;
+package dtfraca.Exo06_Random;
 
 import java.util.Random;
 
@@ -13,7 +13,7 @@ public class SansCervelle {
 		int nombreSecret = 1 + rdmGenerateur.nextInt(10000 - 1 +1);
 		int aa = 0;
 
-		System.out.println("Laissez moi chercher ...");
+		System.out.println("Laissez-moi chercher ...");
 		while (true) {
 			int nombreAleatoire = 1 + rdmGenerateur.nextInt(10000 - 1 +1);
 			aa++;
