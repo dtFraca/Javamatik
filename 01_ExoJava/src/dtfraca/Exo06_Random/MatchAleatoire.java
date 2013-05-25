@@ -12,8 +12,8 @@ public class MatchAleatoire {
 
 		Random rndGenerateur = new Random();
 
-		int teamOne = rndGenerateur.nextInt(3);
-		int teamTwo = rndGenerateur.nextInt(3);
+		int teamOne = rndGenerateur.nextInt(120);
+		int teamTwo = rndGenerateur.nextInt(120);
 
 		System.out.println("Match terminé");
 
@@ -30,8 +30,8 @@ public class MatchAleatoire {
 		}
 
 		if (teamOne == teamTwo) {
-			int teamOnePROG = 5;//0 + rndGenerateur.nextInt(20 - 0);
-			int teamTwoPROG = 5;//0 + rndGenerateur.nextInt(20 - 0);
+			int teamOnePROG = rndGenerateur.nextInt(20);
+			int teamTwoPROG = rndGenerateur.nextInt(20);
 			System.out.println("Passage en prolongation");
 
 			if (teamOnePROG > teamTwoPROG) {

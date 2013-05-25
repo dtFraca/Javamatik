@@ -14,23 +14,23 @@ public class ChercheNombreSecret {
 		Random rdm = new Random();
 
 		int nombreSecret = rdm.nextInt(1000);
-		int aa = 0;
+		int essai = 0;
 
 		while (true) {
-			aa++;
+			essai++;
 			Scanner myScan = new Scanner(System.in);
 			int nombreClavier = myScan.nextInt();
 
 			if (nombreClavier == nombreSecret) {
-				System.out.printf("Nombre trouvé %d (essai = %d)", nombreSecret, aa);
+				System.out.printf("Nombre trouvé %d (essai = %d)", nombreSecret, essai);
 				break;
 		}
 			if (nombreClavier < nombreSecret) {
-				System.out.printf("Nombre supérieur à %d (essai = %d)", nombreClavier, aa);
+				System.out.printf("Nombre supérieur à %d (essai = %d)", nombreClavier, essai);
 			}
 
 			else {
-				System.out.printf("Nombre inférieur à %d (essai = %d)", nombreClavier, aa);
+				System.out.printf("Nombre inférieur à %d (essai = %d)", nombreClavier, essai);
 			}
 
 		}
