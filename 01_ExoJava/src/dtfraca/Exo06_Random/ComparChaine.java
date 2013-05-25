@@ -17,10 +17,26 @@ public class ComparChaine {
 
 		int essai = 0;
 
-		//Generer 4 lettres majuscules
+		//Generer 4 lettres majuscules et minuscules
+		//A-Z 65 - 90 / a-z 97 - 122
 		for (int aa = 0;aa < 4; aa++) {
+			int codeAscii = 0;
+			while (true) {
+				codeAscii = 65 + rdmGenerateur.nextInt(122 - 65);
 
-			int codeAscii = 65 + rdmGenerateur.nextInt(90 - 65);
+				/*if (codeAscii >= 65 && codeAscii <= 90) {
+					break;
+				}
+				if (codeAscii >= 97 && codeAscii <= 122) {
+					break;
+				}*/
+
+				if ( (codeAscii >= 65 && codeAscii <= 90) || (codeAscii >= 97 && codeAscii <= 122) ) {
+					break;
+				}
+
+			}
+
 			char charLettre = (char) codeAscii;
 			chaineSecrete += charLettre;
 		}
