@@ -4,7 +4,7 @@ package dtfraca.Exo09_String;
  * Conversion
  * 1. String to char array
  * 2. char array to string
- *
+ * <p/>
  * 2013-03-13 - tri
  */
 public class A2_CharArrayToString {
@@ -30,7 +30,7 @@ public class A2_CharArrayToString {
 		//----------------------------------------------------
 		// Exemple 2: char[] -> String
 		//----------------------------------------------------
-		char[] bogusChars = {'B', 'o', 'n', 'J', '0', 'u', 'R', ' ', '!' };
+		char[] bogusChars = {'B', 'o', 'n', 'J', '0', 'u', 'R', ' ', '!'};
 		String mot1 = new String(bogusChars);
 		System.out.printf("\nEx #2 (char[] -> String): %s\n", mot1);
 

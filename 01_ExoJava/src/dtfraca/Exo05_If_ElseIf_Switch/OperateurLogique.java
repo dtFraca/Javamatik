@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  * Divers usage de'operateurs logiques dans test IF: EGAL == , PAS EGAL != , ET && , OU ||
- *
+ * <p/>
  * 2013-03-17 - david
  */
 public class OperateurLogique {
@@ -22,15 +22,13 @@ public class OperateurLogique {
 
 		if (age < 18 && anneeNaissance % 4 == 0) {
 			System.out.println("Gagner cadeau surprise (age < 18 et né dans une année bissextile");
-		}
-		else {
+		} else {
 			System.out.println("Pas de cadeau");
 		}
 
 		if (anneeNaissance % 2 == 0) {
 			System.out.println("L'année que vous avez entrée est pair");
-		}
-		else {
+		} else {
 			System.out.println("L'année que vous avez entrée est impair");
 		}
 
@@ -47,16 +45,14 @@ public class OperateurLogique {
 		if (cond1Bissextile || cond2Bissextile) // equiv:
 		{
 			System.out.println("L'année est bissextile");
-		}
-		else {
+		} else {
 			System.out.println("L'année n'est pas bissextile");
 		}
 
 
 		if (age <= 10 || age >= 60) {
 			System.out.printf("Vous pouvez prendre le bus gratuitement (age = %d)\n", age);
-		}
-		else {
+		} else {
 			System.out.printf("Vous devez payez votre ticket de bus (age = %d)\n", age);
 		}
 	}

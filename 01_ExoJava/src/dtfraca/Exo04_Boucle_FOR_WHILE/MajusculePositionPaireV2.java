@@ -12,9 +12,9 @@ public class MajusculePositionPaireV2 {
 		String phraseOriginal = "abcdefghijk-123";
 		String chaineFinale = "";
 
-							int indicePosition = 0;
+		int indicePosition = 0;
 
-							for (Character unCarac : phraseOriginal.toCharArray()) {
+		for (Character unCarac : phraseOriginal.toCharArray()) {
 			indicePosition++;
 
 			//String uneLettre = unCarac.toString();
@@ -23,8 +23,7 @@ public class MajusculePositionPaireV2 {
 				//System.out.printf("%s", Character.toUpperCase(unCarac));
 				chaineFinale += Character.toUpperCase(unCarac);
 
-			}
-			else {
+			} else {
 				//System.out.printf("%s", unCarac);
 				//chaineFinale += unCarac;
 				chaineFinale = chaineFinale + unCarac; // Equivalent de chaineFinale += unCarac

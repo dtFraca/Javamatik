@@ -10,7 +10,8 @@ public class A1_DemoForWhile {
 
 		System.out.println("Demo FOR: ");
 		for (int aa = 0; aa < 7; aa++) { // La boucle FOR executera 7 fois.
-		System.out.printf("Boucle FOR: %d\n", aa); }
+			System.out.printf("Boucle FOR: %d\n", aa);
+		}
 
 
 		System.out.println("\n\nBoucle FOR dans une boucle FOR: ");
@@ -30,14 +31,15 @@ public class A1_DemoForWhile {
 		System.out.println("\n\nFirst WHILE: ");
 		int aa = 0;
 
-		while (aa < 15); {
+		while (aa < 15) ;
+		{
 			System.out.printf("%d", aa);
-				aa++;
+			aa++;
 		}
 
 		System.out.println("\nSecond WHILE: ");
 		aa = 0;
-		while(true) {
+		while (true) {
 			System.out.printf("%d", aa);
 			if (aa <= 6) {
 				break;
@@ -55,9 +57,6 @@ public class A1_DemoForWhile {
 			char charLettre = (char) codeAscii;
 			System.out.printf("Alphabet a-z: %s", charLettre);
 		}
-
-
-
 
 
 	}

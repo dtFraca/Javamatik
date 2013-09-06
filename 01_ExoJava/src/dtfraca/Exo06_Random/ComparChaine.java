@@ -19,7 +19,7 @@ public class ComparChaine {
 
 		//Generer 4 lettres majuscules et minuscules
 		//A-Z 65 - 90 / a-z 97 - 122
-		for (int aa = 0;aa < 4; aa++) {
+		for (int aa = 0; aa < 4; aa++) {
 			int codeAscii = 0;
 			while (true) {
 				codeAscii = 65 + rdmGenerateur.nextInt(122 - 65);
@@ -31,7 +31,7 @@ public class ComparChaine {
 					break;
 				}*/
 
-				if ( (codeAscii >= 65 && codeAscii <= 90) || (codeAscii >= 97 && codeAscii <= 122) ) {
+				if ((codeAscii >= 65 && codeAscii <= 90) || (codeAscii >= 97 && codeAscii <= 122)) {
 					break;
 				}
 
@@ -54,20 +54,16 @@ public class ComparChaine {
 			if (quatreLettreClavier.equalsIgnoreCase(chaineSecrete)) {
 				System.out.printf("Combinaison trouvé (essai = %d)", essai);
 				break;
-			}
-			else {
+			} else {
 				String msg = "Mauvaise réponse";
 
 				if (essai > 10) {
 					msg = "Il faut vous payez une paire de lunettes";
-				}
-				else if (essai > 5 && essai <= 10) {
+				} else if (essai > 5 && essai <= 10) {
 					msg = "Voulez-vous des leçons particulières de lecture";
-				}
-				else if (essai > 2 && essai <= 5) {
+				} else if (essai > 2 && essai <= 5) {
 					msg = "Un peu d'attention";
-				}
-				else if (essai > 1) {
+				} else if (essai > 1) {
 					msg = "Un peu de patience";
 				}
 

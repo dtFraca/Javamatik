@@ -10,7 +10,7 @@ import java.util.Scanner;
  * Read 1 (Text)  : using Scanner class
  * Read 2 (Binary): using Byte & Buffered streams
  * DOCS: http://docs.oracle.com/javase/tutorial/essential/io/index.html
- *
+ * <p/>
  * 2013-03-15 - tri
  */
 public class A2_ReadWriteTextFile {
@@ -33,9 +33,9 @@ public class A2_ReadWriteTextFile {
 		pw.format("Read    a File using Scanner class\n");
 		pw.format("------------------------------------\n\n");
 
-		double prixHorsTaxe = 350d ;
-		double tvaFrance = 0.196d ; // 19.6%
-		double tvaOntario = 0.13d ; // 13%
+		double prixHorsTaxe = 350d;
+		double tvaFrance = 0.196d; // 19.6%
+		double tvaOntario = 0.13d; // 13%
 
 /*
 		DecimalFormat df = new DecimalFormat("#.00");
@@ -72,11 +72,9 @@ public class A2_ReadWriteTextFile {
 			while ((byteValue = inByteBuffStrm.read()) != -1) {
 				System.out.print((char) byteValue);
 			}
-		}
-		catch (IOException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
-		}
-		finally {
+		} finally {
 			if (inByteBuffStrm != null)
 				inByteBuffStrm.close();
 		}

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * Demo elementaire de manipulation array 1 dimension
- *
+ * <p/>
  * 2013-04-24 - tri
  */
 public class A4_ArrayElementaire {
@@ -24,20 +24,20 @@ public class A4_ArrayElementaire {
 
 		// Balayage en avant
 		System.out.println("FORWARD\n===========");
-		for(int i = 0; i < jourSemaine.length; i++) {
+		for (int i = 0; i < jourSemaine.length; i++) {
 			System.out.printf("Position %d, Valeur = %s\n", i, jourSemaine[i]);
 		}
 
 		// Backward
 		System.out.println("\nBACKWARD\n===========");
-		for (int i = jourSemaine.length -1; i >= 0 ; i--) {
+		for (int i = jourSemaine.length - 1; i >= 0; i--) {
 			System.out.printf("Position %d, Valeur = %s\n", i, jourSemaine[i]);
 		}
 
 		// Trier (sort) par ordre alphabetique
 		Arrays.sort(jourSemaine);
 		System.out.println("\nORDER BY ALPHA\n===========");
-		for(int i = 0; i < jourSemaine.length; i++) {
+		for (int i = 0; i < jourSemaine.length; i++) {
 			System.out.printf("Position %d, Valeur = %s\n", i, jourSemaine[i]);
 		}
 

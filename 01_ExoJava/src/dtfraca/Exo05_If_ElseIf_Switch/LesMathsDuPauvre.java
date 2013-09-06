@@ -48,13 +48,13 @@ public class LesMathsDuPauvre {
 			case 4:
 				System.out.print("Conversion binaire, donner valeur décimal entière: ");
 				int valeurAConvertir = paramCalcul.nextInt();
-				System.out.printf("%d (base 10) = %s (base 2, binaire)", valeurAConvertir,  Integer.toBinaryString(valeurAConvertir));
+				System.out.printf("%d (base 10) = %s (base 2, binaire)", valeurAConvertir, Integer.toBinaryString(valeurAConvertir));
 				break;
 
 			case 5:
 				System.out.print("2^N, donner valeur puissance N: ");
 				int puissanceN = paramCalcul.nextInt();
-				System.out.printf("2 à la puissance %d = %d", puissanceN,  (int) Math.pow(2, puissanceN));
+				System.out.printf("2 à la puissance %d = %d", puissanceN, (int) Math.pow(2, puissanceN));
 				break;
 
 

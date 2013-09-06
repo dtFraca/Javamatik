@@ -10,7 +10,7 @@ import java.io.*;
 /**
  * Read/Write a Text File using Binary format (FileStream) - NOT recommended
  * DOCS: http://docs.oracle.com/javase/tutorial/essential/io/bytestreams.html
- *
+ * <p/>
  * 2013-03-17 - tri
  */
 public class A3_ReadWriteTextByBinaryFileStream {

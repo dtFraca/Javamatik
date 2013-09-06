@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 /**
  * Explore class File giving properties of a File or Directory (Size, Date, Path, Exec status, etc)
- *
+ * <p/>
  * 2013-03-15 - tri
  */
 public class A1_FileInfo {
@@ -70,7 +70,7 @@ public class A1_FileInfo {
 					(file1.isDirectory() ? "DIR " : "FILE"),
 					file1.length() / 1000,
 					file1.length()
-					);
+			);
 		}
 
 	}

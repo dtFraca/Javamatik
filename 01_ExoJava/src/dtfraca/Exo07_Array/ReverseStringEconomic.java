@@ -13,7 +13,7 @@ public class ReverseStringEconomic {
 
 		char[] cInverse = new char[mot.length()];
 
-		for (int zz = mot.length()-1; zz >=  0 ;zz--) {
+		for (int zz = mot.length() - 1; zz >= 0; zz--) {
 			//System.out.printf("%s\n", mot.substring(zz, zz +1) );
 			//cInverse[zz] = mot.charAt(zz) ;
 

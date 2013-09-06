@@ -32,8 +32,7 @@ public class InspecteurSystem {
 
 		if (isWindowsOS) {
 			System.out.println("==== Vous avez Windows, happy with Activation?");
-		}
-		else {
+		} else {
 			System.out.printf("==== Vous n'avez pas Windows, votre OS est: %s\n", prop.get("os.name"));
 		}
 
@@ -42,8 +41,7 @@ public class InspecteurSystem {
 		// inconvenient: tous les elements sont testes, et pas uniquement la cle "os.name"
 		if (prop.contains("Linux")) {
 			System.out.println("C'est bien vous avez Linux");
-		}
-		else {
+		} else {
 			System.out.println("Il est temps d'apprendre Linux");
 		}
 	}

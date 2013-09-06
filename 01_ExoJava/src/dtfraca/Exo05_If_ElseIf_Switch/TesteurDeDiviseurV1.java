@@ -15,15 +15,13 @@ public class TesteurDeDiviseurV1 {
 
 		int n1 = myScan.nextInt();
 		int n2 = myScan.nextInt();
-		int n1n2 = n1/n2;
+		int n1n2 = n1 / n2;
 
 		System.out.printf("%d divisé par %d est égal à %d\n", n1, n2, n1n2);
 
-		if (n1%n2==0) {
+		if (n1 % n2 == 0) {
 			System.out.printf("%d est divisible par %d", n1, n2);
-		}
-
-		else {
+		} else {
 			System.out.printf("%d n'est pas divisible par %d", n1, n2);
 		}
 	}

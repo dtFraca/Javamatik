@@ -11,11 +11,11 @@ import java.awt.event.ItemListener;
  * This form uses Layout Manager = FormLayout (JGoodies)
  * MUST add in module dependencies the library /usr/local/IntelliJ/lib/jgoodies-forms.jar
  * Menu File / Project Structure -> Select Modules -> Dependencies Tab
- *
+ * <p/>
  * 1. use anonymous listener to Handle button click
  * 2. use a common listener to handle radiobutton itemStateChanged within the SAME class (implements ItemListener)
  * 3. Playaround with UIManager to set the LookAndFeel theme
- *
+ * <p/>
  * 2013-04-04 - tri
  */
 public class HorribleCalculator implements ItemListener //ActionListener,
@@ -60,15 +60,12 @@ public class HorribleCalculator implements ItemListener //ActionListener,
 
 				if (radioAddition.isSelected()) {
 					txtResult.setText(String.format("%.2f", n1 + n2));
-				}
-				else if (radioSubstraction.isSelected()) {
+				} else if (radioSubstraction.isSelected()) {
 					txtResult.setText(String.format("%.2f", n1 - n2));
-				}
-				else if (radioMultiplication.isSelected()) {
+				} else if (radioMultiplication.isSelected()) {
 					txtResult.setText(String.format("%.2f", n1 * n2));
-				}
-				else if (radioDivision.isSelected()) {
-					txtResult.setText(String.format("%.2f",  n1 / n2));
+				} else if (radioDivision.isSelected()) {
+					txtResult.setText(String.format("%.2f", n1 / n2));
 				}
 				//To change body of implemented methods use File | Settings | File Templates.
 			}
@@ -114,7 +111,7 @@ public class HorribleCalculator implements ItemListener //ActionListener,
 				//UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 				UIManager.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
 				SwingUtilities.updateComponentTreeUI(panel1);
-			} catch(Exception e) {
+			} catch (Exception e) {
 				lblMessage.setText("Error setting GTK+ LAF: " + e);
 			}
 
@@ -124,7 +121,7 @@ public class HorribleCalculator implements ItemListener //ActionListener,
 				//UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
 				UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
 				SwingUtilities.updateComponentTreeUI(panel1);
-			} catch(Exception e) {
+			} catch (Exception e) {
 				lblMessage.setText("Error setting CrossPlatform LAF: " + e);
 			}
 
@@ -132,7 +129,7 @@ public class HorribleCalculator implements ItemListener //ActionListener,
 			try {
 				UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
 				SwingUtilities.updateComponentTreeUI(panel1);
-			} catch(Exception e) {
+			} catch (Exception e) {
 				lblMessage.setText("Error setting Motif LAF: " + e);
 			}
 
@@ -140,7 +137,7 @@ public class HorribleCalculator implements ItemListener //ActionListener,
 			try {
 				UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");
 				SwingUtilities.updateComponentTreeUI(panel1);
-			} catch(Exception e) {
+			} catch (Exception e) {
 				lblMessage.setText("Error setting Nimbus LAF: " + e);
 			}
 

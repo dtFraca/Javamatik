@@ -15,12 +15,11 @@ public class TestDePariteV1 {
 		double n1 = myScan.nextDouble();
 
 
-		System.out.printf("%f divisé par 2 est égal à %f", n1, n1/2);
+		System.out.printf("%f divisé par 2 est égal à %f", n1, n1 / 2);
 
-		if (n1 % 2 == 0 ) {
-			System.out.printf(" donc %f est paire",n1);
-		}
-	else {
+		if (n1 % 2 == 0) {
+			System.out.printf(" donc %f est paire", n1);
+		} else {
 			System.out.printf(", c'est impair", n1);
 		}
 

@@ -47,7 +47,7 @@ class TextAreaFrame extends JFrame {
 		textArea1.setLineWrap(true);
 
 /*
-        NOTE: uses a JScrollPane to provide scrolling for a JTextArea. By default,
+		  NOTE: uses a JScrollPane to provide scrolling for a JTextArea. By default,
         JScrollPane displays scrollbars only if they’re required. You can set the horizontal and
         vertical scrollbar policies of a JScrollPane when it’s constructed.
         If a program has a reference to a JScrollPane, ScrollBarPolicy

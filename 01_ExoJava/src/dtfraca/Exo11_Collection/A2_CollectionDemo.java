@@ -4,7 +4,7 @@ import java.util.*;
 
 /**
  * Demo some Collection methods:  addAll, frequency, disjoint, intersection, union
- *
+ * <p/>
  * 2013-03-19 - tri
  */
 public class A2_CollectionDemo {
@@ -13,9 +13,9 @@ public class A2_CollectionDemo {
 		final String ANDROVERSION_JB = "Jelly Bean";
 		final String ANDROVERSION_FROYO = "Froyo";
 
-		String[] androidVersions = { ANDROVERSION_FROYO, "Gingerbread", "Honey Comb", "Ice Cream Sandwich", ANDROVERSION_JB };
-		List< String > list1 = Arrays.asList( androidVersions );
-		List< String > list2 = new ArrayList< String >();
+		String[] androidVersions = {ANDROVERSION_FROYO, "Gingerbread", "Honey Comb", "Ice Cream Sandwich", ANDROVERSION_JB};
+		List<String> list1 = Arrays.asList(androidVersions);
+		List<String> list2 = new ArrayList<String>();
 
 		list2.add("Key Lime Pie");
 		list2.add("LoL No One Knows");
@@ -24,14 +24,14 @@ public class A2_CollectionDemo {
 		list2.add(ANDROVERSION_JB);
 
 		int posItem = 1;
-		boolean hasCommonItem = ! Collections.disjoint(list1, list2);
-		System.out.printf("List1 & List2 have items in common: %s\n", (hasCommonItem ? "YES" : "NO") );
+		boolean hasCommonItem = !Collections.disjoint(list1, list2);
+		System.out.printf("List1 & List2 have items in common: %s\n", (hasCommonItem ? "YES" : "NO"));
 		if (hasCommonItem) {
 			//INCORRECT: .retainAll() gives intersection WITH duplicates (Jelly Bean is listed x2)
 			//List <String> listCommon = new ArrayList<String>(list2);
 			//listCommon.retainAll(list1);
 
-			List <String> listCommon = intersectionList(list1, list2);
+			List<String> listCommon = intersectionList(list1, list2);
 
 			posItem = 1;
 			for (String str : listCommon) {
@@ -86,7 +86,7 @@ public class A2_CollectionDemo {
 		List<T> list = new ArrayList<T>();
 
 		for (T t : list1) {
-			if(list2.contains(t)) {
+			if (list2.contains(t)) {
 				list.add(t);
 			}
 		}

@@ -6,10 +6,10 @@ import java.util.*;
  * Demo Collection & ArrayList, here the ArrayList will contains simple string
  * DOCS : http://docs.oracle.com/javase/6/docs/api/java/util/Collections.html
  * TUTOR: http://docs.oracle.com/javase/tutorial/collections/index.html
- *
+ * <p/>
  * INTERESTING: When to use LinkedList over ArrayList?
  * http://stackoverflow.com/questions/322715/when-to-use-linkedlist-over-arraylist
- *
+ * <p/>
  * 2013-03-18 - tri
  */
 public class A1_ArrayListDemo {
@@ -44,19 +44,17 @@ public class A1_ArrayListDemo {
 		Collections.sort(alNomPays);
 
 		// Iterator simple (forward only)
-		Iterator< String > iteratorPays = alNomPays.iterator();
+		Iterator<String> iteratorPays = alNomPays.iterator();
 		orderNum = 1;
-		while ( iteratorPays.hasNext() )
-		{
+		while (iteratorPays.hasNext()) {
 			System.out.printf("%2d. %s\n", orderNum++, iteratorPays.next());
 		}
 
 		// ListIterator simple (forward & backward)
 		System.out.println("\nArralyList (SORT DEScending) + ListIterator:");
-		ListIterator< String > listiterPays = alNomPays.listIterator(alNomPays.size());
+		ListIterator<String> listiterPays = alNomPays.listIterator(alNomPays.size());
 		orderNum = 1;
-		while ( listiterPays.hasPrevious() )
-		{
+		while (listiterPays.hasPrevious()) {
 			System.out.printf("%2d. %s\n", orderNum++, listiterPays.previous());
 		}
 
@@ -70,7 +68,7 @@ public class A1_ArrayListDemo {
 
 		System.out.println("\nArralyList - for (i; list.size(); i++)");
 		for (int i = 0; i < alNomPays.size(); i++) {
-			System.out.printf("%2d. %s\n", i +1, alNomPays.get(i));
+			System.out.printf("%2d. %s\n", i + 1, alNomPays.get(i));
 		}
 
 
@@ -78,14 +76,14 @@ public class A1_ArrayListDemo {
 		Collections.reverse(alNomPays);
 		System.out.println("\nArralyList (SORT DEScending) - Collections.reverse()");
 		for (int i = 0; i < alNomPays.size(); i++) {
-			System.out.printf("%2d. %s\n", i +1, alNomPays.get(i));
+			System.out.printf("%2d. %s\n", i + 1, alNomPays.get(i));
 		}
 
 		// Shuffle item order
 		Collections.shuffle(alNomPays);
 		System.out.println("\nArralyList (SHUFFLE) - Collections.shuffle()");
 		for (int i = 0; i < alNomPays.size(); i++) {
-			System.out.printf("%2d. %s\n", i +1, alNomPays.get(i));
+			System.out.printf("%2d. %s\n", i + 1, alNomPays.get(i));
 		}
 	}
 }

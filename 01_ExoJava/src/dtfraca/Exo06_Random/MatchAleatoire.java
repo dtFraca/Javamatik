@@ -36,12 +36,11 @@ public class MatchAleatoire {
 
 			if (teamOnePROG > teamTwoPROG) {
 				System.out.printf("Team 1 après PROG");
-			}
-			else if (teamOnePROG < teamTwoPROG) {
+			} else if (teamOnePROG < teamTwoPROG) {
 				System.out.printf("Team 2 après PROG");
 
 			}
-			
+
 
 		}
 	}

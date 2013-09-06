@@ -15,19 +15,19 @@ public class CalculTaxeTVA {
 
 		System.out.printf("MONTANT: %.2f\n\n", prixHorsTaxe);
 
-		double tvaFrance = 19.6d ; // equivalent = 0.196
+		double tvaFrance = 19.6d; // equivalent = 0.196
 		double taxe = prixHorsTaxe * (tvaFrance / 100.0);
 		System.out.printf("Prix apres taxe %.2f€ en France........ (taxe: %.2f%% => %.2f€)\n", prixHorsTaxe + taxe, tvaFrance, taxe);
 
-		double tvaAllemagne = 19.0d ; // equivalent = 0.19
+		double tvaAllemagne = 19.0d; // equivalent = 0.19
 		taxe = prixHorsTaxe * (tvaAllemagne / 100.0);
 		System.out.printf("Prix apres taxe %.2f€ en Allemagne..... (taxe: %.2f%% => %.2f€)\n", prixHorsTaxe + taxe, tvaAllemagne, taxe);
 
-		double tvaItalie = 23.0d ;
-		double tvaUK = 18.0d ;
-		double tvaCAOnt = 13.0d ;
-		double tvaCAAB = 5.0d ;
-		double tvaUSCA = 10.0d ;
+		double tvaItalie = 23.0d;
+		double tvaUK = 18.0d;
+		double tvaCAOnt = 13.0d;
+		double tvaCAAB = 5.0d;
+		double tvaUSCA = 10.0d;
 
 		taxe = prixHorsTaxe * (tvaItalie / 100.0);
 		System.out.printf("Prix apres taxe %.2f€ en Italie........ (taxe: %.2f%% => %.2f€)\n", prixHorsTaxe + taxe, tvaItalie, taxe);

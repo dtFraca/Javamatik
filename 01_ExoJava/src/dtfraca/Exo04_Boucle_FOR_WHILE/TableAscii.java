@@ -10,7 +10,7 @@ public class TableAscii {
 
 		for (int codeAscii = 32; codeAscii <= 255; codeAscii++) {
 			char charLettre = (char) codeAscii;
-			System.out.printf("%3d\t%c\n",codeAscii, charLettre);
+			System.out.printf("%3d\t%c\n", codeAscii, charLettre);
 
 
 		}

@@ -15,7 +15,7 @@ public class SplitMotDemo1 {
 		String phrase = "le,chemin;de la.liberte";
 		int zz = 1;
 		for (String mot : phrase.split("")) {
-			System.out.printf("%2d. [%s]\n",zz++, mot);
+			System.out.printf("%2d. [%s]\n", zz++, mot);
 		}
 
 	}

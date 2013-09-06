@@ -15,7 +15,7 @@ public class ReverseStringEconomic2 {
 			System.out.printf("[%d] %s, ", zz, charLettres[zz]);
 		}
 		System.out.print("\nchar[] charLettres BACKWARD: ");
-		for (int zz = charLettres.length-1; zz >= 0; zz--) {
+		for (int zz = charLettres.length - 1; zz >= 0; zz--) {
 			System.out.printf("[%d] %s, ", zz, charLettres[zz]);
 		}
 		System.out.println();
@@ -33,9 +33,9 @@ public class ReverseStringEconomic2 {
 
 //		System.out.print("\n\ncInverse[]: ");
 //		for (int zz = 0; zz < cInverse.length; zz++) {
-		for (int nbFor = 0; nbFor <= cInverse.length-1; nbFor++ ) {
+		for (int nbFor = 0; nbFor <= cInverse.length - 1; nbFor++) {
 			//System.out.printf("%d - %d\n", nbFor, mot.length() -1 - nbFor);
-			cInverse[nbFor] = charLettres[mot.length() -1 - nbFor];
+			cInverse[nbFor] = charLettres[mot.length() - 1 - nbFor];
 		}
 
 

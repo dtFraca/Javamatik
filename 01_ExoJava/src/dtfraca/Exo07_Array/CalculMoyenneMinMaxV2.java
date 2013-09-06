@@ -9,7 +9,7 @@ import java.io.PrintStream;
  */
 public class CalculMoyenneMinMaxV2 {
 	public static void main(String[] args) {
-		int aNombre [] = {144, 233, 655, 77};
+		int aNombre[] = {144, 233, 655, 77};
 		int maxVal = 0;
 		int minVal = 0;
 		double moyenne = 0;

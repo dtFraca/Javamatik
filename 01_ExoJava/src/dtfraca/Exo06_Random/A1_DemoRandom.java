@@ -77,7 +77,7 @@ public class A1_DemoRandom {
 
 
             /*
-            Le meme test plus "pro" mais plus difficile a comprendre
+				Le meme test plus "pro" mais plus difficile a comprendre
 
             if (    ! (codeAsciiSymbol >= 48 && codeAsciiSymbol <= 57) // 0-9
                  && ! (codeAsciiSymbol >= 65 && codeAsciiSymbol <= 90) // A-Z

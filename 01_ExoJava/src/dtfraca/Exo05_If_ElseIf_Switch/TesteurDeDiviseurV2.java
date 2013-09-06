@@ -18,60 +18,51 @@ public class TesteurDeDiviseurV2 {
 
 		if (n1 % 2 == 0) {
 			System.out.printf("%d est divisible par.......%d\n", n1, 2);
-		}
-		else {
+		} else {
 			System.out.printf("%d n'est pas divisible par %d\n", n1, 2);
 		}
 
 		if (n1 % 3 == 0) {
 			System.out.printf("%d est divisible par.......%d\n", n1, 3);
-		}
-		else {
+		} else {
 			System.out.printf("%d n'est pas divisible par %d\n", n1, 3);
 		}
 
 		if (n1 % 4 == 0) {
 			System.out.printf("%d est divisible par.......%d\n", n1, 4);
-		}
-		else {
+		} else {
 			System.out.printf("%d n'est pas divisible par %d\n", n1, 4);
 		}
 
 		if (n1 % 5 == 0) {
 			System.out.printf("%d est divisible par.......%d\n", n1, 5);
-		}
-		else {
+		} else {
 			System.out.printf("%d n'est pas divisible par %d\n", n1, 5);
 		}
 
 		if (n1 % 6 == 0) {
 			System.out.printf("%d est divisible par.......%d\n", n1, 6);
-		}
-		else {
+		} else {
 			System.out.printf("%d n'est pas divisible par %d\n", n1, 6);
 		}
 		if (n1 % 7 == 0) {
 			System.out.printf("%d est divisible par.......%d\n", n1, 7);
-		}
-		else {
+		} else {
 			System.out.printf("%d n'est pas divisible par %d\n", n1, 7);
 		}
 		if (n1 % 8 == 0) {
 			System.out.printf("%d est divisible par.......%d\n", n1, 8);
-		}
-		else {
+		} else {
 			System.out.printf("%d n'est pas divisible par %d\n", n1, 8);
 		}
 		if (n1 % 9 == 0) {
 			System.out.printf("%d est divisible par....... %d\n", n1, 9);
-		}
-		else {
+		} else {
 			System.out.printf("%d n'est pas divisible par %d\n", n1, 9);
 		}
 		if (n1 % 10 == 0) {
 			System.out.printf("%d est divisible par....... %d\n", n1, 10);
-		}
-		else {
+		} else {
 			System.out.printf("%d n'est pas divisible par %d\n", n1, 10);
 		}
 

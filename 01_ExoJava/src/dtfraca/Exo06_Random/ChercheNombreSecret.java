@@ -24,19 +24,17 @@ public class ChercheNombreSecret {
 			if (nombreClavier == nombreSecret) {
 				System.out.printf("Nombre trouvé %d (essai = %d)", nombreSecret, essai);
 				break;
-		}
+			}
 			if (nombreClavier < nombreSecret) {
 				System.out.printf("Nombre supérieur à %d (essai = %d)", nombreClavier, essai);
-			}
-
-			else {
+			} else {
 				System.out.printf("Nombre inférieur à %d (essai = %d)", nombreClavier, essai);
 			}
 
 		}
 
 
-		}
-
 	}
+
+}
 

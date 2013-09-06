@@ -13,7 +13,7 @@ import javax.swing.JPanel;
  * Except here the GUI design uses IntelliJ Idea UI Designer with FormLayout (JGoodies)
  * 1. Use createUIComponents method: to allow custom initialization
  * 2. Use derived JPanel class to add functionalities
- *
+ * <p/>
  * 2013-04-06 - tri
  */
 public class JSliderDrawCircle {
@@ -55,19 +55,16 @@ public class JSliderDrawCircle {
 	}
 }
 
-class PanelWithCircle extends JPanel
-{
+class PanelWithCircle extends JPanel {
 	private int diameter = 30; // Initial size of the circle in pixels
 
-	public void paintComponent( Graphics g )
-	{
-		super.paintComponent( g );
-		g.fillOval( 10, 10, diameter, diameter ); // draw circle
+	public void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		g.fillOval(10, 10, diameter, diameter); // draw circle
 	}
 
-	public void setDiameter( int newDiameter )
-	{
-		diameter = ( newDiameter >= 0 ? newDiameter : 10 );
+	public void setDiameter(int newDiameter) {
+		diameter = (newDiameter >= 0 ? newDiameter : 10);
 		this.repaint();
 	}
 }

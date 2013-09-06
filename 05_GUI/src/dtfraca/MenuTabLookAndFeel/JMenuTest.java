@@ -23,7 +23,7 @@ import javax.swing.JMenuBar;
  * This is the improved version (better syntax, better class organization) found in
  * Book "Java for developers, page 700, 22.4 Using Menus with Frames"
  * NOTE: this class is code manually (no GUI editor)
- *
+ * <p/>
  * 2013-04-07 - tri
  */
 public class JMenuTest {
@@ -67,16 +67,15 @@ class FrameWithMenu extends JFrame {
 
 		// anonymous inner class: display message dialog when user clicks About...
 		aboutItem.addActionListener(
-			new ActionListener()
-			{
-				//
-				public void actionPerformed(ActionEvent event) {
-					JOptionPane.showMessageDialog(FrameWithMenu.this,
-							"This is an example\nof using menus",
-							"About",
-							JOptionPane.PLAIN_MESSAGE);
+				new ActionListener() {
+					//
+					public void actionPerformed(ActionEvent event) {
+						JOptionPane.showMessageDialog(FrameWithMenu.this,
+								"This is an example\nof using menus",
+								"About",
+								JOptionPane.PLAIN_MESSAGE);
+					}
 				}
-			}
 		);
 
 		JMenuItem exitItem = new JMenuItem("Exit"); // create exit item
@@ -85,14 +84,12 @@ class FrameWithMenu extends JFrame {
 
 		// anonymous inner class: terminate application when user clicks exitItem
 		exitItem.addActionListener(
-				new ActionListener()
-				{
+				new ActionListener() {
 					public void actionPerformed(ActionEvent event) {
 						System.exit(0); // exit application
 					}
 				}
 		);
-
 
 
 		//=== Menu Item "Format"=======================
@@ -191,20 +188,19 @@ class FrameWithMenu extends JFrame {
 
 		// When a JCheckBoxMenuItem changes state
 		@Override
-		public void itemStateChanged( ItemEvent e )
-		{
+		public void itemStateChanged(ItemEvent e) {
 			// determine which items are checked and create Font
-			if ( styleItems[ 0 ].isSelected() && styleItems[ 1 ].isSelected() )
+			if (styleItems[0].isSelected() && styleItems[1].isSelected())
 				currFontStyle = Font.BOLD + Font.ITALIC;
-			else if ( styleItems[ 0 ].isSelected() )
+			else if (styleItems[0].isSelected())
 				currFontStyle = Font.BOLD;
-			else if ( styleItems[ 1 ].isSelected() )
+			else if (styleItems[1].isSelected())
 				currFontStyle = Font.ITALIC;
 			else
 				currFontStyle = Font.PLAIN;
 
 			String name = lblSampleText.getFont().getName(); // current Font
-			Font font = new Font( name, currFontStyle, SAMPLE_FONTSIZE );
+			Font font = new Font(name, currFontStyle, SAMPLE_FONTSIZE);
 			lblSampleText.setFont(font);
 			repaint(); // redraw application
 		}

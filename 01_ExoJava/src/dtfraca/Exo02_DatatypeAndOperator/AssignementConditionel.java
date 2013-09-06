@@ -26,7 +26,7 @@ public class AssignementConditionel {
 
 		// assignement conditionel ( test ? <valeur test OK> : <valeur test pasOK>)
 
-		String resultatExamen = (laNote >= 12.0 ? "PASSE" : "ECHEC" );
+		String resultatExamen = (laNote >= 12.0 ? "PASSE" : "ECHEC");
 
 		System.out.println("\n\nVersion utilisant Assignement Conditionel:");
 		System.out.printf("Resultat: %s (Votre Note: %.2f, Minimum pour passer: 12)\n",

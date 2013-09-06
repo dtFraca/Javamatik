@@ -21,7 +21,7 @@ public class SplitMotDemo2 {
 		System.out.println();
 */
 
-		for (int zz = mots.length-1; zz >= 0; zz--) {
+		for (int zz = mots.length - 1; zz >= 0; zz--) {
 			System.out.printf("%2d. %s\n", zz, mots[zz]);
 		}
 

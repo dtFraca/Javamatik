@@ -17,24 +17,17 @@ public class DocteurVirtuel {
 
 		if (descripMaladie.contains("TOUSSE") && descripMaladie.contains("SANG")) {
 			msgDocteur = "Tuberculose";
-		}
-		else if (descripMaladie.contains("TOUSSE") && descripMaladie.contains("GORGE")) {
+		} else if (descripMaladie.contains("TOUSSE") && descripMaladie.contains("GORGE")) {
 			msgDocteur = "Angine aigue";
-		}
-		else if (descripMaladie.contains("GORGE")) {
+		} else if (descripMaladie.contains("GORGE")) {
 			msgDocteur = "Angine";
-		}
-		else if (descripMaladie.contains("TETE")) {
+		} else if (descripMaladie.contains("TETE")) {
 			msgDocteur = "Migraine";
-		}
-		else if (descripMaladie.contains("FATIGUE")) {
+		} else if (descripMaladie.contains("FATIGUE")) {
 			msgDocteur = "Besoin d'exercices";
-		}
-		else if (descripMaladie.contains("TOUSSE")) {
+		} else if (descripMaladie.contains("TOUSSE")) {
 			msgDocteur = "Toux sèche";
-		}
-
-		else {
+		} else {
 			msgDocteur = "Maladie inconnue";
 		}
 		System.out.printf("Votre maladie: %s\n", msgDocteur);

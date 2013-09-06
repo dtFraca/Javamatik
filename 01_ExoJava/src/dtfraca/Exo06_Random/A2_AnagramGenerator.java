@@ -4,7 +4,7 @@ import java.util.Random;
 
 /**
  * Generer un anagrame en mixant les letrres d'un mot connu
- *
+ * <p/>
  * 2013-05-09 - tri
  */
 public class A2_AnagramGenerator {
@@ -14,7 +14,7 @@ public class A2_AnagramGenerator {
 		String[] dicoMots = {
 				"ABRICOT", "BAGUETTE", "ELEPHANT", "FROMAGE",
 				"MAISONETTE", "HYDRAULIQUE", "DECHARGER",
-				"FOOTBALL", "LUMIERES", "RECEVOIR" };
+				"FOOTBALL", "LUMIERES", "RECEVOIR"};
 
 		for (int i = 0; i < dicoMots.length; i++) {
 			System.out.printf("%2d. %15s -> %s\n", i, dicoMots[i], CreateAnagram(dicoMots[i]));

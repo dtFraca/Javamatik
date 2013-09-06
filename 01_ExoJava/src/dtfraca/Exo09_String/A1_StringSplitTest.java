@@ -2,7 +2,7 @@ package dtfraca.Exo09_String;
 
 /**
  * 1. String.split() avec plusieurs variante de delimiteurs
- *
+ * <p/>
  * <p/>
  * 2013-03-13 - tri
  */

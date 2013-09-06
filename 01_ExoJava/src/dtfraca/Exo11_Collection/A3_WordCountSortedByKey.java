@@ -5,9 +5,9 @@ import java.util.*;
 /**
  * Demo HashMap, TreeSet
  * display list of words (sorted AZ) and how many times the word appear in a paragraph
- *
+ * <p/>
  * Book "Java for Programmers, 18.11 Maps, page 610 WordTypeCount"
- *
+ * <p/>
  * 2013-03-22 - tri
  */
 public class A3_WordCountSortedByKey {
@@ -34,18 +34,16 @@ public class A3_WordCountSortedByKey {
 		// les mots d'origine (y compris doublons), separateur = espace et diveres ponctuations
 		String[] motsOriginal = txtParagraph.split("[.; ,'()]");
 
-		Map< String, Integer > mapMots = new HashMap< String, Integer >();
+		Map<String, Integer> mapMots = new HashMap<String, Integer>();
 		for (String leMot : motsOriginal) {
 			// n'accepte que les mot d'au moins 2 lettres
-			if (leMot.length() > 1)
-			{
+			if (leMot.length() > 1) {
 				if (mapMots.containsKey(leMot)) {
 					// mot existe deja dans le HashMap, +1 le nb de fois que le mot apparait (la frequence)
 					int iFrequence = mapMots.get(leMot); // .get() prendre la valeur de la cle
 					iFrequence++;
 					mapMots.put(leMot, iFrequence); // .put() placer la valeur
-				}
-				else {
+				} else {
 					// mot nouveau? Creer une nouvelle entree dans HashMap et init iFrequence = 1
 					mapMots.put(leMot, 1);
 				}
@@ -69,7 +67,7 @@ public class A3_WordCountSortedByKey {
 
 
 		// METHOD 2: TreeSet (items are sorted automatically)
-		Set< String > treeSetMots = new TreeSet< String >( mapMots.keySet() );
+		Set<String> treeSetMots = new TreeSet<String>(mapMots.keySet());
 		int kk = 1;
 		for (String leMot : treeSetMots) {
 			System.out.printf("%3d. %-20s: %d\n", kk++, leMot, mapMots.get(leMot));

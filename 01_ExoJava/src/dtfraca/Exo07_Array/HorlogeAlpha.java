@@ -7,7 +7,7 @@ import java.util.Date;
 /**
  * Afficher une horloge en caractere Alpha
  * Ex: 17h39 doit s'écrire "Dix sept heures, Trente neuf minutes"
- *
+ * <p/>
  * 2013-04-07 - tri
  */
 public class HorlogeAlpha {

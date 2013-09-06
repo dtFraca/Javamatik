@@ -4,7 +4,7 @@ import java.io.*;
 
 /**
  * Write a binary file + Using buffer: Demo how to copy an image file
- *
+ * <p/>
  * 2013-03-17 - tri
  */
 public class A5_BinaryFileCopy {
@@ -28,8 +28,12 @@ public class A5_BinaryFileCopy {
 				strmTarget.write(wordValue);
 			}
 		} finally {
-			if (strmSource != null) { strmSource.close(); }
-			if (strmTarget != null) { strmTarget.close(); }
+			if (strmSource != null) {
+				strmSource.close();
+			}
+			if (strmTarget != null) {
+				strmTarget.close();
+			}
 		}
 
 
@@ -46,8 +50,12 @@ public class A5_BinaryFileCopy {
 				buffTarget.write(wordValue);
 			}
 		} finally {
-			if (buffSource != null) { buffSource.close(); }
-			if (buffTarget != null) { buffTarget.close(); }
+			if (buffSource != null) {
+				buffSource.close();
+			}
+			if (buffTarget != null) {
+				buffTarget.close();
+			}
 		}
 
 		System.out.println("\n\nFINISHED, Please check:");
